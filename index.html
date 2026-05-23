@@ -1,10 +1,3 @@
-<!-- ════════════════════════════════════════════════════════════════════
-     CardioPharm — index.html — PART 1 of 3   (lines 1–411)
-     REASSEMBLY: create index.html by concatenating, in order:
-       part1.html.txt  +  part2.html.txt  +  part3.html.txt
-     Do NOT add blank lines between parts. This part 1 opens <html>,
-     <head>, <style>, <body>, the <script>, and begins the data layer.
-     ════════════════════════════════════════════════════════════════ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -415,12 +408,6 @@ const ALL_MODULES = {
       typing:[{scenario:"A patient with SVT needs a rate-limiting calcium channel blocker IV. Which drug?",answer:"verapamil"},{scenario:"Why must you never give IV verapamil with a beta-blocker?",answer:"complete heart block"},{scenario:"Common bowel side effect of verapamil?",answer:"constipation"}],
     }
   },
-
-/* ════════════════════════════════════════════════════════════════════
-   CardioPharm — index.html — PART 2 of 3   (lines 412–815)
-   Append directly after PART 1. Continues the module data and begins
-   the icons + render helper functions. (No HTML tags open/close here.)
-   ════════════════════════════════════════════════════════════════ */
   statin: {
     slides:{
       physiology:s("Cholesterol is made by the liver via the mevalonate pathway; the rate-limiting enzyme is HMG-CoA reductase. Cholesterol travels as LDL ('bad' — deposits in arteries) and HDL ('good' — returns to liver). Statins inhibit HMG-CoA reductase, so the liver makes more LDL receptors and clears LDL from the blood.",[bnf("st1","Statins"),rang("st2")]),
@@ -825,11 +812,6 @@ const state = {
 };
 
 function diffClass(d){ return 'diff diff-'+d; }
-/* ════════════════════════════════════════════════════════════════════
-   CardioPharm — index.html — PART 3 of 3   (lines 816–end)
-   Append directly after PART 2. Contains the remaining render + event
-   handler functions, the init call, then closes </script></body></html>.
-   ════════════════════════════════════════════════════════════════ */
 function streakClass(s){ return 'streak '+(s===0?'s0':s>=10?'s10':s>=5?'s5':'s1'); }
 
 // ═══════════════════════════════════════════════════════════════════════════
