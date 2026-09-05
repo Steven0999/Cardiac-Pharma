@@ -197,6 +197,73 @@ header{background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-botto
 .prog-chip{display:flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;font-size:10px;font-weight:900;border:1px solid;background:#f8fafc;color:#475569;border-color:#e2e8f0;}
 .prog-chip.done{background:#ecfdf5;color:#047857;border-color:#a7f3d0;}
 
+/* clinical challenge hub */
+.clinical-note{background:#fffbeb;border:1px solid #fde68a;color:#78350f;border-radius:14px;padding:12px 14px;font-size:11px;line-height:1.5;font-weight:700;margin:0 0 20px;}
+.clinical-note strong{font-weight:900;}
+.quick-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:22px;}
+@media(min-width:640px){.quick-grid{grid-template-columns:1fr 1fr 1fr;}}
+.quick-card{min-height:132px;border-radius:16px;padding:16px;text-align:left;color:#fff;box-shadow:0 8px 18px rgba(15,23,42,.12);display:flex;flex-direction:column;justify-content:space-between;transition:transform .15s;width:100%;}
+.quick-card:active{transform:scale(.98);}
+.quick-card .qi{font-size:26px;margin-bottom:10px;display:block;}
+.quick-card h3{font-size:14px;font-weight:900;line-height:1.2;margin-bottom:5px;}
+.quick-card p{font-size:10px;line-height:1.4;color:rgba(255,255,255,.82);font-weight:700;}
+.quick-card .go{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-top:12px;}
+.quick-random{background:linear-gradient(135deg,#e11d48,#7c3aed);}
+.quick-condition{background:linear-gradient(135deg,#0369a1,#0d9488);}
+.quick-essential{background:linear-gradient(135deg,#c2410c,#b91c1c);}
+.section-row{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:12px;}
+.section-row .section-title{margin-bottom:0;}
+.section-row p{font-size:10px;color:#94a3b8;font-weight:800;text-align:right;}
+.tag-challenge{background:#eef2ff;color:#4338ca;border:1px solid #c7d2fe;}
+.challenge-launch{width:100%;margin-top:10px;padding:14px;border-radius:14px;background:linear-gradient(90deg,#7c3aed,#e11d48);color:#fff;font-weight:900;font-size:13px;box-shadow:0 5px 12px rgba(124,58,237,.18);}
+.conditions-head{margin-bottom:16px;}
+.conditions-head h2{font-size:22px;font-weight:900;margin-bottom:5px;}
+.conditions-head p{font-size:12px;line-height:1.5;color:#64748b;font-weight:600;}
+.condition-card .card-badge{font-size:24px;}
+.condition-meta{font-size:10px;color:#64748b;font-weight:800;margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;}
+.condition-meta span{background:#f1f5f9;border-radius:9999px;padding:4px 8px;}
+.guidance-links{margin-top:22px;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:14px;}
+.guidance-links h3{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:8px;}
+.guidance-links div{display:flex;flex-wrap:wrap;gap:6px;}
+.guidance-links a{font-size:10px;font-weight:800;color:#be123c;background:#fff1f2;border:1px solid #fecdd3;border-radius:9999px;padding:5px 9px;text-decoration:none;}
+
+/* 20-question challenge */
+.challenge-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px;}
+.challenge-title{min-width:0;}
+.challenge-title h2{font-size:16px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.challenge-title p{font-size:9px;color:#94a3b8;font-weight:900;text-transform:uppercase;letter-spacing:.08em;}
+.care-badge{display:inline-flex;align-items:center;gap:5px;border-radius:9999px;padding:5px 9px;font-size:9px;font-weight:900;border:1px solid;white-space:nowrap;}
+.care-primary{background:#ecfdf5;color:#047857;border-color:#a7f3d0;}
+.care-emergency{background:#fff7ed;color:#c2410c;border-color:#fed7aa;}
+.care-ed{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe;}
+.challenge-context{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px;}
+.challenge-context .module{font-size:10px;color:#64748b;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.answer-feedback{border-radius:14px;padding:13px 14px;margin:10px 0;border:2px solid;}
+.answer-feedback.ok{background:#ecfdf5;border-color:#6ee7b7;color:#065f46;}
+.answer-feedback.no{background:#fff1f2;border-color:#fda4af;color:#9f1239;}
+.answer-feedback .result{font-size:13px;font-weight:900;margin-bottom:5px;}
+.answer-feedback .why{font-size:12px;line-height:1.45;font-weight:650;}
+.answer-feedback .src{font-size:9px;margin-top:8px;font-weight:800;opacity:.8;}
+.answer-feedback .src a{text-decoration:underline;}
+.challenge-complete{text-align:center;}
+.challenge-complete .score-ring{width:112px;height:112px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;background:linear-gradient(135deg,#e11d48,#7c3aed);box-shadow:0 12px 22px rgba(124,58,237,.2);}
+.score-ring strong{font-size:30px;line-height:1;font-weight:900;}
+.score-ring span{font-size:9px;text-transform:uppercase;font-weight:900;letter-spacing:.08em;margin-top:4px;}
+.challenge-complete h2{font-size:22px;font-weight:900;margin-bottom:4px;}
+.challenge-complete>p{font-size:12px;color:#64748b;margin-bottom:16px;}
+.care-results{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0;}
+.care-result{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px 5px;text-align:center;}
+.care-result strong{display:block;font-size:16px;font-weight:900;color:#0f172a;}
+.care-result span{display:block;font-size:8px;color:#64748b;font-weight:900;text-transform:uppercase;margin-top:3px;}
+.review-box{text-align:left;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:13px;margin:14px 0;}
+.review-box h3{font-size:12px;font-weight:900;margin-bottom:8px;}
+.review-item{padding:9px 0;border-top:1px solid #f1f5f9;}
+.review-item:first-of-type{border-top:0;}
+.review-item p{font-size:11px;line-height:1.4;color:#475569;font-weight:700;}
+.review-item strong{display:block;font-size:10px;color:#047857;margin-top:4px;}
+.challenge-actions{display:flex;flex-direction:column;gap:8px;margin-top:12px;}
+@media(min-width:640px){.challenge-actions{flex-direction:row;}.challenge-actions button{flex:1;}}
+
 /* drawer & modal */
 .overlay{position:fixed;inset:0;z-index:50;display:flex;}
 .overlay-bg{position:absolute;inset:0;background:rgba(0,0,0,0.4);backdrop-filter:blur(4px);}
@@ -314,7 +381,7 @@ const ALL_MODULES = {
       physiology:s("The sympathetic nervous system releases adrenaline and noradrenaline onto beta-adrenoceptors. β1 receptors (heart) increase heart rate and force of contraction; β2 receptors (lungs, vessels) cause bronchodilation and vasodilation. Beta-blockers compete with adrenaline at these receptors, slowing the heart and lowering blood pressure — acting as a brake on an over-driven heart.",[bnf("o1","Beta-adrenoceptor blocking drugs"),rang("o2")]),
       pathophysiology:s("In hypertension, angina and heart failure the sympathetic system is chronically overactive. High heart rate raises myocardial oxygen demand (angina); chronic catecholamine exposure damages heart muscle (heart failure); excess adrenaline destabilises cardiac electrics (arrhythmia). Beta-blockade reduces this harmful drive and lowers mortality post-MI and in HFrEF (MERIT-HF, CIBIS-II trials).",[nice("o3","Chronic heart failure in adults","NG106")]),
       actions:s("Beta-blockers block beta-adrenoceptors. Selective agents (bisoprolol, metoprolol, atenolol) act mainly on cardiac β1 — safer in asthma. Non-selective agents (propranolol, carvedilol) also block β2. Carvedilol adds α1 blockade (vasodilation); nebivolol releases nitric oxide; labetalol blocks α and β (used IV in emergencies). Selectivity is dose-dependent.",[bnf("o4","Bisoprolol fumarate")]),
-      prehospital:s("🚑 Common patient meds: bisoprolol (HF, AF), atenolol/metoprolol (BP), propranolol (anxiety, tremor, migraine), carvedilol (post-MI HF).\n\n⚠️ Hazards: overdose causes bradycardia + hypotension → IV atropine, then glucagon 1–10 mg (JRCALC). Beta-blocked patients may not mount a tachycardia in shock — don't rely on HR. Never give salbutamol with propranolol in asthma.",[jrc("o5")]),
+      prehospital:s("🚑 Common patient meds: bisoprolol (HF, AF), atenolol/metoprolol (BP), propranolol (anxiety, tremor, migraine), carvedilol (post-MI HF).\n\n⚠️ Hazards: overdose can cause profound bradycardia and hypotension — resuscitate under the current toxicology/bradycardia pathway; RCUK 2025 advises considering glucagon when beta-blocker or calcium-channel blocker toxicity is suspected. Beta-blocked patients may not mount a tachycardia in shock. Non-selective agents such as propranolol may worsen bronchospasm and blunt beta-2 agonist response, so escalate severe asthma promptly.",[jrc("o5")]),
       interactions:s("❌ Verapamil/diltiazem IV + beta-blocker = complete heart block — never combine IV.\n❌ Non-selective beta-blocker + salbutamol = bronchospasm.\n⚠️ Digoxin = additive bradycardia.\n⚠️ Insulin/sulphonylureas = masks hypoglycaemia (sweating preserved).\n⚠️ NSAIDs reduce the antihypertensive effect.",[bnf("o6","Appendix 1: Interactions")]),
       indications:s("✅ Hypertension (NICE NG136)\n✅ Stable angina — first-line antianginal\n✅ Heart failure with reduced EF — bisoprolol, carvedilol, nebivolol\n✅ Atrial fibrillation — rate control\n✅ Post-MI — reduces sudden death\n✅ Migraine prophylaxis & essential tremor — propranolol\n✅ Thyrotoxicosis symptom control",[nice("o7","Hypertension in adults","NG136")]),
       contraindications:s("⛔ Acute severe asthma (non-selective)\n⛔ Cardiogenic shock\n⛔ Uncompensated heart failure\n⛔ 2nd/3rd degree AV block\n⛔ Severe bradycardia (<50 bpm)\n⛔ Phaeochromocytoma without prior alpha-blockade\n\n⚠️ Caution: diabetes (masks hypos), COPD, peripheral arterial disease.",[bnf("o8","Beta-blockers — contraindications")]),
@@ -334,7 +401,7 @@ const ALL_MODULES = {
       physiology:s("The Renin-Angiotensin-Aldosterone System (RAAS) controls blood pressure. Renin converts angiotensinogen to angiotensin I; ACE then converts it to angiotensin II — a powerful vasoconstrictor that also triggers aldosterone (salt/water retention). ACE also breaks down bradykinin. ACE inhibitors block this enzyme: less angiotensin II, more bradykinin.",[bnf("p1","ACE inhibitors"),rang("p2")]),
       pathophysiology:s("Chronic RAAS overactivation drives hypertension, worsens heart failure (cardiac remodelling), and damages diabetic kidneys (high glomerular pressure). ACE inhibitors break this cycle, reduce mortality in heart failure (CONSENSUS — enalapril) and slow diabetic kidney decline. They are reno-protective by reducing pressure inside the kidney's filters.",[nice("p3","Chronic heart failure","NG106")]),
       actions:s("ACE inhibitors block angiotensin-converting enzyme: blood vessels relax, aldosterone falls (sodium/water excreted), heart afterload drops. Raised bradykinin causes the dry cough in ~15% of patients. Most are prodrugs (ramipril→ramiprilat) needing liver activation; lisinopril and captopril are active as given. Switch to an ARB if cough is intolerable.",[bnf("p4","Ramipril")]),
-      prehospital:s("🚑 Common meds: ramipril (post-MI, HF, BP), lisinopril, perindopril, enalapril.\n\n⚠️ Hazards: angioedema (lip/tongue/throat swelling) is a life-threatening airway emergency — treat as anaphylaxis with IM adrenaline 500 mcg (JRCALC). Not reliably helped by antihistamines. Also watch first-dose hypotension and hyperkalaemia.",[jrc("p5")]),
+      prehospital:s("🚑 Common meds: ramipril (post-MI, HF, BP), lisinopril, perindopril, enalapril.\n\n⚠️ Hazards: angioedema involving the lips, tongue or throat is a life-threatening airway emergency. Assess and manage the airway immediately and follow the current angioedema/anaphylaxis pathway; give IM adrenaline when anaphylaxis is suspected or the authorised protocol directs it. Bradykinin-mediated swelling may respond poorly to antihistamines. Also watch for first-dose hypotension and hyperkalaemia.",[jrc("p5")]),
       interactions:s("❌ Potassium-sparing diuretics + ACE inhibitor = hyperkalaemia.\n❌ NSAID + ACE inhibitor + diuretic = 'triple whammy' AKI.\n❌ Pregnancy = absolute contraindication (fetal harm).\n⚠️ Lithium toxicity — ACE inhibitors raise lithium.\n⚠️ Loop diuretics → first-dose hypotension (give first dose at night).",[bnf("p6","ACE inhibitors interactions")]),
       indications:s("✅ Hypertension — first-line in under-55s, diabetes, CKD\n✅ Heart failure with reduced EF\n✅ Post-MI with LV dysfunction (ramipril, captopril)\n✅ Diabetic nephropathy — slows decline\n✅ Secondary CV prevention — ramipril 10 mg (HOPE)\n✅ Stroke prevention — perindopril + indapamide (PROGRESS)",[nice("p7","Hypertension","NG136")]),
       contraindications:s("⛔ Pregnancy (all trimesters) — fetal renal failure\n⛔ Previous ACE inhibitor angioedema\n⛔ Bilateral renal artery stenosis\n⛔ Hyperkalaemia (K+ >5.5)\n\n⚠️ Caution: renal impairment — accept up to 30% creatinine rise; don't stop for minor rises.",[bnf("p8","ACE inhibitors — contraindications")]),
@@ -384,7 +451,7 @@ const ALL_MODULES = {
       matching:[{drug:"Amlodipine",condition:"Hypertension — once-daily, long half-life"},{drug:"Nifedipine MR",condition:"Pregnancy hypertension and Raynaud's"},{drug:"Felodipine",condition:"Hypertension — affected by grapefruit juice"},{drug:"Lercanidipine",condition:"Hypertension with less ankle oedema"},{drug:"Nicardipine",condition:"IV use in hypertensive emergency"}],
       drugForCondition:[{condition:"First-line antihypertensive for a 65-year-old (NICE NG136)",correct:"Amlodipine",distractors:["Ramipril","Bisoprolol","Furosemide"]},{condition:"Calcium channel blocker for Raynaud's phenomenon",correct:"Nifedipine",distractors:["Amlodipine","Verapamil","Diltiazem"]},{condition:"Dihydropyridine used in pregnancy hypertension",correct:"Nifedipine MR",distractors:["Amlodipine","Lercanidipine","Felodipine"]}],
       conditionForDrug:[{drug:"Amlodipine",conditions:["Hypertension and angina","Cardiogenic shock","Severe aortic stenosis","Unstable angina (IR)"],correct:"Hypertension and angina"},{drug:"Nifedipine",conditions:["Raynaud's and pregnancy hypertension","AV block","Bradycardia","Heart failure first-line"],correct:"Raynaud's and pregnancy hypertension"}],
-      mcq:[{q:"Most common side effect of dihydropyridine CCBs?",options:["Bradycardia","Ankle oedema","Cough","Hyperkalaemia"],correct:"Ankle oedema"},{q:"Which juice raises CCB levels?",options:["Orange","Apple","Grapefruit","Cranberry"],correct:"Grapefruit"},{q:"Dihydropyridines are first-line antihypertensives for which group?",options:["Under-55s","Over-55s and Afro-Caribbean","Pregnant only","Children"],correct:"Over-55s and Afro-Caribbean"},{q:"Which statin dose must be limited with amlodipine?",options:["Atorvastatin 80 mg","Simvastatin 20 mg max","Rosuvastatin 40 mg","Pravastatin 40 mg"],correct:"Simvastatin 20 mg max"},{q:"Dihydropyridines act mainly on?",options:["Cardiac conduction","Arterial smooth muscle","Venous capacitance","Renal tubules"],correct:"Arterial smooth muscle"}],
+      mcq:[{q:"Most common side effect of dihydropyridine CCBs?",options:["Bradycardia","Ankle oedema","Cough","Hyperkalaemia"],correct:"Ankle oedema"},{q:"Which juice raises CCB levels?",options:["Orange","Apple","Grapefruit","Cranberry"],correct:"Grapefruit"},{q:"Under NICE hypertension guidance, a CCB is a common step-1 option for which group?",options:["Adults aged 55 or over, or adults of Black African or African-Caribbean family origin without type 2 diabetes","Every adult under 40 regardless of assessment","Pregnant people only","Children without specialist review"],correct:"Adults aged 55 or over, or adults of Black African or African-Caribbean family origin without type 2 diabetes"},{q:"Which statin dose must be limited with amlodipine?",options:["Atorvastatin 80 mg","Simvastatin 20 mg max","Rosuvastatin 40 mg","Pravastatin 40 mg"],correct:"Simvastatin 20 mg max"},{q:"Dihydropyridines act mainly on?",options:["Cardiac conduction","Arterial smooth muscle","Venous capacitance","Renal tubules"],correct:"Arterial smooth muscle"}],
       typing:[{scenario:"A 68-year-old needs a first-line antihypertensive per NICE NG136. Which CCB?",answer:"amlodipine"},{scenario:"Patient on amlodipine + simvastatin — maximum simvastatin dose?",answer:"20 mg"},{scenario:"Common benign side effect of amlodipine affecting the lower legs?",answer:"ankle oedema"}],
     }
   },
@@ -423,7 +490,7 @@ const ALL_MODULES = {
       matching:[{drug:"Atorvastatin",condition:"High-intensity — first-line secondary prevention"},{drug:"Rosuvastatin",condition:"Most potent LDL reduction — familial hypercholesterolaemia"},{drug:"Simvastatin",condition:"Avoid with clarithromycin and fusidic acid"},{drug:"Pravastatin",condition:"Fewest interactions — preferred in polypharmacy/CKD"},{drug:"Fluvastatin",condition:"Moderate intensity option"}],
       drugForCondition:[{condition:"Secondary prevention post-MI — maximum high-intensity statin",correct:"Atorvastatin 80 mg",distractors:["Simvastatin 40 mg","Pravastatin 20 mg","Rosuvastatin 5 mg"]},{condition:"Statin with fewest interactions for complex polypharmacy",correct:"Pravastatin",distractors:["Simvastatin","Atorvastatin","Fluvastatin"]},{condition:"Primary prevention, 12% 10-year CV risk",correct:"Atorvastatin 20 mg",distractors:["Simvastatin 80 mg","No statin","Rosuvastatin 40 mg"]}],
       conditionForDrug:[{drug:"Atorvastatin",conditions:["Primary and secondary CV prevention","Active liver disease","Pregnancy","Rhabdomyolysis"],correct:"Primary and secondary CV prevention"},{drug:"Pravastatin",conditions:["Statin with fewest interactions in CKD","Active hepatitis","Breastfeeding","Raised LFTs"],correct:"Statin with fewest interactions in CKD"}],
-      mcq:[{q:"Why are statins taken at night?",options:["Better absorption","Cholesterol synthesis peaks at night","With food only","Timing irrelevant"],correct:"Cholesterol synthesis peaks at night"},{q:"Highest rhabdomyolysis risk combination?",options:["Atorvastatin + aspirin","Simvastatin + clarithromycin","Pravastatin + metformin","Rosuvastatin + amlodipine"],correct:"Simvastatin + clarithromycin"},{q:"Target LDL for secondary prevention (NG238)?",options:["<4.0","<3.0","<2.0","<1.0"],correct:"<2.0"},{q:"Absolute contraindication to statins?",options:["Mildly raised CK","Active liver disease","Mild CKD","Hypothyroidism"],correct:"Active liver disease"},{q:"Severe muscle pain + dark red urine on a statin suggests?",options:["Hepatitis","Neuropathy","Rhabdomyolysis","SJS"],correct:"Rhabdomyolysis"}],
+      mcq:[{q:"Why are shorter-acting statins such as simvastatin usually taken in the evening?",options:["Better absorption","Cholesterol synthesis peaks overnight","They only work with an evening meal","All statins must be taken at night"],correct:"Cholesterol synthesis peaks overnight"},{q:"Highest rhabdomyolysis risk combination?",options:["Atorvastatin + aspirin","Simvastatin + clarithromycin","Pravastatin + metformin","Rosuvastatin + amlodipine"],correct:"Simvastatin + clarithromycin"},{q:"Target LDL for secondary prevention (NG238)?",options:["<4.0","<3.0","<2.0","<1.0"],correct:"<2.0"},{q:"Absolute contraindication to statins?",options:["Mildly raised CK","Active liver disease","Mild CKD","Hypothyroidism"],correct:"Active liver disease"},{q:"Severe muscle pain + dark red urine on a statin suggests?",options:["Hepatitis","Neuropathy","Rhabdomyolysis","SJS"],correct:"Rhabdomyolysis"}],
       typing:[{scenario:"Post-MI patient needs secondary prevention. First-line statin and dose?",answer:"atorvastatin 80 mg"},{scenario:"Patient on simvastatin prescribed clarithromycin — what must happen to the statin?",answer:"stop"},{scenario:"Severe muscle pain, weakness and dark urine on a statin — name the complication.",answer:"rhabdomyolysis"}],
     }
   },
@@ -634,7 +701,7 @@ const ALL_MODULES = {
       pathophysiology:s("In angina, myocardial oxygen demand exceeds supply, causing chest pain. Nitrates relieve angina by dilating veins (less preload, less cardiac work) and dilating coronary arteries (more supply). In acute heart failure/pulmonary oedema, nitrates reduce preload, relieving congestion. GTN is the classic acute anginal relief.",[nice("n3","Stable angina","CG126")]),
       actions:s("Nitrates (GTN, isosorbide mononitrate/dinitrate) release nitric oxide → vasodilation. Venodilation reduces preload; coronary dilation improves supply. GTN (sublingual spray/tablet) acts within minutes for acute angina. Isosorbide mononitrate is longer-acting for prevention. Tolerance develops with continuous use — need a nitrate-free period.",[bnf("n4","Glyceryl trinitrate")]),
       prehospital:s("🚑 Used by paramedics: GTN spray (sublingual) for acute angina/chest pain and acute pulmonary oedema (JRCALC).\n\n⚠️ Hazards: profound hypotension — especially with phosphodiesterase-5 inhibitors (sildenafil/Viagra) → can be fatal. ALWAYS ask about PDE-5 inhibitor use before giving GTN. Headache and dizziness common. Do not give if BP low or in right ventricular MI.",[jrc("n5")]),
-      interactions:s("❌ PDE-5 inhibitors (sildenafil, tadalafil) + nitrates = severe, potentially fatal hypotension — ABSOLUTE contraindication.\n⚠️ Other antihypertensives + nitrates = additive hypotension.\n⚠️ Alcohol enhances hypotensive effect.\n⚠️ Continuous nitrate use → tolerance (need nitrate-free interval).",[bnf("n6","Nitrates interactions")]),
+      interactions:s("❌ PDE-5 inhibitors (sildenafil, tadalafil) + nitrates can cause severe, potentially life-threatening hypotension — this combination is contraindicated.\n⚠️ Other antihypertensives + nitrates = additive hypotension.\n⚠️ Alcohol enhances hypotensive effect.\n⚠️ Continuous nitrate use → tolerance (need nitrate-free interval).",[bnf("n6","Nitrates interactions")]),
       indications:s("✅ Acute angina — GTN sublingual spray/tablet (NICE CG126)\n✅ Angina prophylaxis — isosorbide mononitrate\n✅ Acute heart failure / pulmonary oedema — IV GTN (reduce preload)\n✅ Acute coronary syndrome — IV GTN for ongoing chest pain\n✅ Anal fissure — topical GTN (off-cardiac use)",[nice("n7","Stable angina","CG126")]),
       contraindications:s("⛔ Concurrent PDE-5 inhibitors (sildenafil/tadalafil)\n⛔ Hypotension (systolic <90 mmHg)\n⛔ Severe aortic stenosis\n⛔ Hypertrophic obstructive cardiomyopathy\n⛔ Right ventricular MI (preload-dependent)\n⛔ Raised intracranial pressure\n\n⚠️ Caution: hypovolaemia, recent sildenafil use.",[bnf("n8","Glyceryl trinitrate — contraindications")]),
       dosages:s("💊 GTN spray (acute angina): 1–2 sprays sublingually; repeat after 5 min; call 999 if no relief after 2nd dose\n💊 GTN IV (pulmonary oedema/ACS): 10–200 mcg/min titrated to BP\n💊 Isosorbide mononitrate: 10–60 mg daily with a nitrate-free interval\n\n📋 ALWAYS ask about sildenafil/Viagra before giving. Sit patient down (hypotension).",[bnf("n9","Glyceryl trinitrate")]),
@@ -644,7 +711,7 @@ const ALL_MODULES = {
       drugForCondition:[{condition:"Acute angina chest pain — fast-acting sublingual drug",correct:"GTN spray",distractors:["Isosorbide mononitrate","Atorvastatin","Bisoprolol"]},{condition:"Long-acting nitrate for angina prevention",correct:"Isosorbide mononitrate",distractors:["GTN spray","Amlodipine","Ramipril"]},{condition:"IV nitrate to reduce preload in acute pulmonary oedema",correct:"GTN",distractors:["Isosorbide oral","Furosemide tablet","Aspirin"]}],
       conditionForDrug:[{drug:"GTN spray",conditions:["Acute angina","Recent sildenafil use","Systolic BP 80","Right ventricular MI"],correct:"Acute angina"},{drug:"Isosorbide mononitrate",conditions:["Angina prophylaxis","Concurrent PDE-5 inhibitor","Severe aortic stenosis","Hypotension"],correct:"Angina prophylaxis"}],
       mcq:[{q:"Nitrates relieve angina mainly by?",options:["Increasing heart rate","Venodilation reducing preload","Increasing contractility","Raising blood pressure"],correct:"Venodilation reducing preload"},{q:"Which drug is an ABSOLUTE contraindication with nitrates?",options:["Aspirin","Sildenafil (PDE-5 inhibitor)","Atorvastatin","Ramipril"],correct:"Sildenafil (PDE-5 inhibitor)"},{q:"What must paramedics ALWAYS ask before giving GTN?",options:["Allergies only","Recent sildenafil/Viagra use","Last meal","Smoking history"],correct:"Recent sildenafil/Viagra use"},{q:"Continuous nitrate use leads to?",options:["Dependence","Tolerance (need nitrate-free interval)","Toxicity","Bradycardia"],correct:"Tolerance (need nitrate-free interval)"},{q:"Most common side effect of nitrates?",options:["Constipation","Headache","Cough","Ankle swelling"],correct:"Headache"}],
-      typing:[{scenario:"A patient with acute angina chest pain needs fast relief. Which sublingual drug?",answer:"GTN"},{scenario:"Before giving GTN, what drug must you ALWAYS ask about due to fatal hypotension risk?",answer:"sildenafil"},{scenario:"Continuous nitrate use causes loss of effect — what is this called?",answer:"tolerance"}],
+      typing:[{scenario:"A patient with acute angina chest pain needs fast relief. Which sublingual drug?",answer:"GTN"},{scenario:"Before giving GTN, what drug class must you ask about because the combination can cause severe hypotension?",answer:"PDE-5 inhibitor"},{scenario:"Continuous nitrate use causes loss of effect — what is this called?",answer:"tolerance"}],
     }
   },
 
@@ -736,7 +803,7 @@ const ALL_MODULES = {
 
 const SYSTEM = {
   id:"Cardiac", label:"Cardiology", icon:"🫀",
-  desc:"The complete cardiovascular pharmacology curriculum — every major drug-class suffix and prefix.",
+  desc:"Major cardiovascular drug classes with 20-question challenges spanning primary care, emergency care and the emergency department.",
   suffixes:[
     { id:"olol",          affix:"-olol",          tk:"rose",    action:"Beta-Blockers",                         drugs:["Bisoprolol","Metoprolol","Atenolol","Carvedilol","Propranolol","Labetalol","Esmolol","Nebivolol"], difficulty:"Easy" },
     { id:"pril",          affix:"-pril",          tk:"red",     action:"ACE Inhibitors",                        drugs:["Ramipril","Lisinopril","Enalapril","Perindopril","Captopril"], difficulty:"Easy" },
@@ -761,6 +828,171 @@ const SYSTEM = {
     { id:"flozin",        affix:"-flozin",        tk:"indigo",  action:"SGLT2 Inhibitors (Cardiac/Renal)",      drugs:["Dapagliflozin","Empagliflozin","Canagliflozin"], difficulty:"Medium" },
   ]
 };
+
+// Clinical challenge layer. The original slides and five quiz formats above remain
+// unchanged; these questions add a care-continuum assessment to every drug class.
+const CARE_FOCUS = {
+  primary:{label:"Primary care",icon:"🩺",className:"care-primary"},
+  emergency:{label:"Emergency care",icon:"🚑",className:"care-emergency"},
+  ed:{label:"Emergency department",icon:"🏥",className:"care-ed"},
+};
+
+const CLINICAL_SOURCES = {
+  BNF:{label:"BNF — current medicine monograph and interactions",url:"https://bnf.nice.org.uk/"},
+  NG106:{label:"NICE NG106 — Chronic heart failure",url:"https://www.nice.org.uk/guidance/ng106"},
+  NG136:{label:"NICE NG136 — Hypertension",url:"https://www.nice.org.uk/guidance/ng136"},
+  NG185:{label:"NICE NG185 — Acute coronary syndromes",url:"https://www.nice.org.uk/guidance/ng185"},
+  NG196:{label:"NICE NG196 — Atrial fibrillation",url:"https://www.nice.org.uk/guidance/ng196"},
+  NG238:{label:"NICE NG238 — CVD risk and lipid modification",url:"https://www.nice.org.uk/guidance/ng238"},
+  RCUK2025:{label:"Resuscitation Council UK — Adult ALS 2025",url:"https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines"},
+  MHRA:{label:"MHRA Drug Safety Update",url:"https://www.gov.uk/drug-safety-update"},
+  LOCAL:{label:"Current JRCALC and local ambulance medicines policy",url:"https://jrcalc.org.uk/"},
+};
+
+const careQ=(focus,q,options,correct,explanation,sourceId="BNF")=>({focus,type:"mcq",prompt:q,options,answer:correct,explanation,sourceId});
+
+const CARE_PATHWAY_QUESTIONS = {
+  olol:[
+    careQ("primary","A patient with stable HFrEF is taking bisoprolol. What is the safest review approach?",["Stop it when symptoms improve","Check pulse, blood pressure and congestion before cautious titration","Double it whenever heart rate is above 60","Replace it with verapamil"],"Check pulse, blood pressure and congestion before cautious titration","Evidence-based beta-blockers are normally continued and titrated while monitoring heart rate, blood pressure and clinical stability.","NG106"),
+    careQ("emergency","A wheezy patient taking propranolol is poorly responsive to their usual beta-2 agonist. What is the key concern?",["Propranolol may antagonise beta-2 bronchodilation","The inhaler has caused an ACE-inhibitor cough","This proves pulmonary oedema","Beta-blockers always cause anaphylaxis"],"Propranolol may antagonise beta-2 bronchodilation","Non-selective beta-blockade can worsen bronchospasm and blunt beta-2 agonist effect; assess severity and escalate under the current emergency pathway.","BNF"),
+    careQ("ed","A patient has shock and marked bradycardia after a suspected beta-blocker overdose. Which additional treatment does RCUK say to consider?",["Glucagon","Adenosine","Warfarin","Verapamil"],"Glucagon","RCUK 2025 advises considering glucagon when beta-blockers or calcium-channel blockers may be causing adverse bradycardia, alongside resuscitation and toxicology support.","RCUK2025")
+  ],
+  pril:[
+    careQ("primary","What monitoring is central when an ACE inhibitor is started or increased?",["Renal function and potassium","INR every week","Peak expiratory flow","Serum digoxin only"],"Renal function and potassium","ACE inhibitors can increase creatinine and potassium, so baseline and follow-up renal function and electrolytes are essential.","BNF"),
+    careQ("emergency","A patient taking ramipril develops rapid tongue swelling and noisy breathing. What is the priority?",["Urgent airway assessment and emergency escalation","Give the next ramipril dose","Arrange a routine lipid test","Ask the patient to lie flat and wait"],"Urgent airway assessment and emergency escalation","ACE-inhibitor angioedema can obstruct the airway. Manage the airway threat immediately and follow the current anaphylaxis/angioedema and medicines pathway.","LOCAL"),
+    careQ("ed","A dehydrated patient taking ramipril, a diuretic and an NSAID develops AKI. What interaction pattern is this?",["The triple whammy","Serotonin syndrome","A cholinergic crisis","Red-man syndrome"],"The triple whammy","An ACE inhibitor or ARB plus a diuretic plus an NSAID markedly increases AKI risk, particularly during dehydration or acute illness.","BNF")
+  ],
+  sartan:[
+    careQ("primary","An ACE inhibitor causes persistent cough. Which class is commonly considered when renin–angiotensin blockade is still indicated?",["An ARB","A nitrate only","A thrombolytic","A P2Y12 inhibitor"],"An ARB","ARBs provide angiotensin-receptor blockade without the same bradykinin-related cough, while still requiring renal and potassium monitoring.","NG106"),
+    careQ("emergency","A patient has taken a large amount of candesartan and is hypotensive. What is the safest general approach?",["Support ABCs and seek specialist toxicology advice","Give adenosine immediately","Induce vomiting","Give another ARB to compete"],"Support ABCs and seek specialist toxicology advice","ARB overdose is managed with supportive resuscitation, monitoring and specialist poisons advice rather than a routine specific antidote.","BNF"),
+    careQ("ed","Which finding requires urgent review of an ARB prescription?",["Pregnancy","Controlled hypertension","Previous ACE-inhibitor cough","Stable heart failure"],"Pregnancy","Drugs acting on the renin–angiotensin system can harm the fetus and require urgent medication review in pregnancy.","BNF")
+  ],
+  dipine:[
+    careQ("primary","A patient develops ankle oedema after starting amlodipine but has no signs of heart failure. What is the best next step?",["Review the medicine and blood pressure rather than assuming fluid-overload heart failure","Automatically add high-dose furosemide","Stop every antihypertensive permanently","Diagnose a DVT in both legs without assessment"],"Review the medicine and blood pressure rather than assuming fluid-overload heart failure","Dihydropyridine calcium-channel blockers commonly cause dependent oedema; assess the patient and review the regimen.","NG136"),
+    careQ("emergency","Severe amlodipine overdose most commonly produces which dangerous pattern?",["Vasodilatory hypotension","Isolated bronchospasm","Hypercoagulability","Severe hypertension with tachypnoea only"],"Vasodilatory hypotension","Calcium-channel blocker overdose can cause profound hypotension and cardiovascular collapse; provide resuscitation and urgent toxicology-led care.","BNF"),
+    careQ("ed","What is unsafe for rapid, unmonitored treatment of a hypertensive emergency?",["Immediate-release sublingual nifedipine","Titrated treatment with continuous monitoring","Assessment for acute target-organ damage","Senior-led selection of IV therapy"],"Immediate-release sublingual nifedipine","Abrupt, uncontrolled blood-pressure reduction can cause ischaemia; hypertensive emergencies require monitored, condition-specific treatment.","NG136")
+  ],
+  verapamil:[
+    careQ("primary","Before prescribing verapamil, which combination needs particular scrutiny because of bradycardia and heart-block risk?",["A beta-blocker","A statin alone","A proton-pump inhibitor","Paracetamol"],"A beta-blocker","Rate-limiting calcium-channel blockers have additive negative chronotropic and conduction effects with beta-blockers.","BNF"),
+    careQ("emergency","A tachyarrhythmia is causing shock and myocardial ischaemia. What treatment should not be delayed for verapamil?",["Synchronized cardioversion","A routine lipid panel","Oral antihypertensive titration","A 24-hour Holter before treatment"],"Synchronized cardioversion","RCUK 2025 recommends electrical cardioversion for unstable tachyarrhythmia with life-threatening adverse signs.","RCUK2025"),
+    careQ("ed","Why is IV verapamil particularly hazardous when a patient has already received a beta-blocker?",["It can precipitate severe bradycardia, heart block and circulatory collapse","It causes immediate hyperglycaemia","It reverses anticoagulation","It blocks aspirin absorption"],"It can precipitate severe bradycardia, heart block and circulatory collapse","The combination can profoundly suppress AV conduction and contractility and requires strict avoidance or specialist control.","BNF")
+  ],
+  statin:[
+    careQ("primary","Which medicine is NICE's usual starting statin for primary prevention after risk discussion when treatment is indicated?",["Atorvastatin 20 mg","Simvastatin 80 mg","Ezetimibe alone for everyone","No lipid-lowering treatment"],"Atorvastatin 20 mg","NICE NG238 recommends atorvastatin 20 mg as the usual starting treatment for primary prevention when indicated after informed discussion.","NG238"),
+    careQ("emergency","A person taking a statin reports severe muscle pain, weakness and dark urine. What is the priority?",["Urgent assessment for rhabdomyolysis and renal injury","Reassure and double the statin","Give GTN","Treat as uncomplicated ankle oedema"],"Urgent assessment for rhabdomyolysis and renal injury","Severe muscle symptoms with dark urine may indicate rhabdomyolysis and need urgent assessment, CK and renal evaluation.","BNF"),
+    careQ("ed","After an acute coronary syndrome, what medicines-reconciliation point is important before discharge?",["Ensure high-intensity lipid-lowering secondary prevention is addressed","Stop lipid therapy because the event has finished","Use a fibrate instead of reviewing statin tolerance","Delay all prevention until symptoms recur"],"Ensure high-intensity lipid-lowering secondary prevention is addressed","ACS care includes early and long-term secondary prevention, with intolerance and interactions actively reviewed.","NG185")
+  ],
+  ezetimibe:[
+    careQ("primary","When is ezetimibe most commonly used in lipid management?",["As add-on therapy or when statins are not tolerated or unsuitable","For immediate relief of angina","To terminate SVT","As an IV diuretic"],"As add-on therapy or when statins are not tolerated or unsuitable","Ezetimibe reduces intestinal cholesterol absorption and is used within guideline lipid-lowering pathways.","NG238"),
+    careQ("emergency","A patient with chest pain says they take ezetimibe. What should you remember?",["It is preventive and does not treat the acute chest-pain emergency","It replaces aspirin in every suspected ACS","It is a rapid vasodilator","It confirms the pain is non-cardiac"],"It is preventive and does not treat the acute chest-pain emergency","Long-term lipid therapy does not change the need for urgent clinical assessment and the current suspected-ACS pathway.","NG185"),
+    careQ("ed","A post-ACS patient cannot tolerate an adequate statin dose. What is the appropriate principle?",["Document the intolerance and use a guideline-directed alternative or add-on pathway","Abandon lipid lowering permanently","Use adenosine instead","Treat LDL only if chest pain returns"],"Document the intolerance and use a guideline-directed alternative or add-on pathway","Secondary prevention should be optimised using tolerated statin therapy and recommended non-statin options when needed.","NG238")
+  ],
+  xaban:[
+    careQ("primary","Which review is essential for a patient taking apixaban or rivaroxaban?",["Adherence, bleeding, renal function and interacting medicines","INR adjustment before every dose","Routine abrupt treatment breaks","Daily troponin testing"],"Adherence, bleeding, renal function and interacting medicines","DOAC effect depends on adherence and appropriate dosing for renal function, age, weight, indication and interactions.","NG196"),
+    careQ("emergency","A patient taking apixaban has major trauma. Which information is most useful during handover?",["Exact drug, indication, dose, last dose and bleeding findings","Only the tablet colour","Their childhood vaccination history only","Whether they prefer tablets to capsules"],"Exact drug, indication, dose, last dose and bleeding findings","Time of the last anticoagulant dose, renal function and bleeding severity guide emergency assessment and reversal decisions.","BNF"),
+    careQ("ed","Life-threatening bleeding on a factor Xa inhibitor requires what approach?",["Resuscitation, urgent haematology/toxicology input and protocol-based reversal consideration","Automatic vitamin K as the specific antidote","Delay treatment until an INR returns","Give thrombolysis"],"Resuscitation, urgent haematology/toxicology input and protocol-based reversal consideration","Major DOAC bleeding needs immediate supportive care and specialist, indication-specific reversal decisions; vitamin K does not reverse factor Xa inhibitors.","BNF")
+  ],
+  gatran:[
+    careQ("primary","Why is renal review particularly important for dabigatran?",["It is substantially renally cleared","It always raises INR above 5","It permanently suppresses platelets","It is only absorbed through the skin"],"It is substantially renally cleared","Reduced renal clearance can increase dabigatran exposure and bleeding risk, so dose suitability and renal function need review.","BNF"),
+    careQ("emergency","A patient on dabigatran has a suspected intracranial bleed. What should be established urgently?",["Last dose, renal function and severity while escalating immediately","Their target INR only","Whether they have ankle oedema","Their most recent cholesterol ratio only"],"Last dose, renal function and severity while escalating immediately","Major bleeding requires immediate assessment; time since dose and renal clearance help estimate ongoing anticoagulant effect.","BNF"),
+    careQ("ed","Which agent specifically reverses dabigatran in life-threatening or uncontrolled bleeding?",["Idarucizumab","Andexanet alfa","Vitamin K","Protamine"],"Idarucizumab","Idarucizumab binds dabigatran and is its specific reversal agent when clinically indicated.","BNF")
+  ],
+  parin:[
+    careQ("primary","A patient self-injecting LMWH needs which safety review?",["Indication, duration, renal function, weight, bleeding and injection technique","INR titration with every injection","Stopping it whenever bruising is absent","Taking it with a PDE-5 inhibitor to improve effect"],"Indication, duration, renal function, weight, bleeding and injection technique","LMWH dosing and safety depend on indication and patient factors, particularly renal function and body weight.","BNF"),
+    careQ("emergency","Before giving an antithrombin under an ACS or VTE pathway, what is essential?",["Confirm indication, bleeding risk, allergies, renal function and any anticoagulant already taken","Give it to every patient with chest discomfort","Wait for a cholesterol result only","Combine every anticoagulant for faster action"],"Confirm indication, bleeding risk, allergies, renal function and any anticoagulant already taken","Anticoagulants can cause major harm when duplicated or given despite contraindications; use the current indication-specific protocol.","NG185"),
+    careQ("ed","A patient develops thrombocytopenia and new thrombosis several days after heparin exposure. What must be suspected?",["Heparin-induced thrombocytopenia","ACE-inhibitor cough","Nitrate tolerance","Statin myalgia"],"Heparin-induced thrombocytopenia","HIT is a prothrombotic immune reaction; stop heparin exposure and obtain urgent specialist assessment and alternative anticoagulation guidance.","BNF")
+  ],
+  warfarin:[
+    careQ("primary","What is central to safe long-term warfarin care?",["INR monitoring plus review of adherence, diet, illness and interacting medicines","Renal dosing with no coagulation monitoring","A fixed dose that never changes","Stopping it before every dental review without advice"],"INR monitoring plus review of adherence, diet, illness and interacting medicines","Warfarin response changes with illness, diet and many medicines, so structured anticoagulation monitoring is essential.","BNF"),
+    careQ("emergency","A patient on warfarin has a head injury. What should the emergency handover include?",["Indication, last dose, latest INR if known and neurological/bleeding findings","Only the brand of their blood-pressure cuff","Whether the tablets are scored","Their peak flow diary"],"Indication, last dose, latest INR if known and neurological/bleeding findings","Anticoagulation increases intracranial bleeding risk; early recognition, transport and complete medicines handover are important.","BNF"),
+    careQ("ed","What is the usual principle for life-threatening warfarin-associated bleeding?",["Immediate resuscitation and protocol-led rapid reversal with prothrombin complex concentrate plus IV vitamin K","Idarucizumab alone","Aspirin plus clopidogrel","Wait for warfarin to wear off without treatment"],"Immediate resuscitation and protocol-led rapid reversal with prothrombin complex concentrate plus IV vitamin K","Major warfarin bleeding requires urgent factor replacement and vitamin K under the hospital major-haemorrhage/anticoagulation protocol.","BNF")
+  ],
+  grel:[
+    careQ("primary","A patient wants to stop clopidogrel soon after coronary stenting because of bruising. What is safest?",["Do not stop it without urgent advice from the responsible cardiology/prescribing team","Stop it immediately for any bruise","Replace it with warfarin without review","Take alternate-day doses independently"],"Do not stop it without urgent advice from the responsible cardiology/prescribing team","Premature interruption of antiplatelet therapy after stenting can cause stent thrombosis; bleeding still needs proportionate assessment.","NG185"),
+    careQ("emergency","In suspected ACS, why should current antiplatelet and anticoagulant use be identified early?",["It changes bleeding risk and prevents accidental duplicate treatment","It rules out myocardial infarction","It makes an ECG unnecessary","It proves the patient needs thrombolysis"],"It changes bleeding risk and prevents accidental duplicate treatment","Accurate medicines reconciliation supports safe protocol-based antithrombotic treatment and handover.","NG185"),
+    careQ("ed","How should a P2Y12 inhibitor be selected in ACS?",["According to diagnosis, reperfusion/PCI plan, bleeding risk and the current cardiology guideline","Choose whichever name ends in -grel","Give all three agents together","Use it only if GTN relieves the pain"],"According to diagnosis, reperfusion/PCI plan, bleeding risk and the current cardiology guideline","Clopidogrel, prasugrel and ticagrelor are not interchangeable in every situation; selection depends on the ACS strategy and patient factors.","NG185")
+  ],
+  amiodarone:[
+    careQ("primary","Which monitoring is associated with long-term amiodarone therapy?",["Thyroid, liver, lung, ECG and interaction review","INR only in every patient","Peak flow only","No monitoring once rhythm is controlled"],"Thyroid, liver, lung, ECG and interaction review","Amiodarone accumulates in tissues and can cause thyroid, hepatic, pulmonary, ocular and electrical adverse effects.","BNF"),
+    careQ("emergency","Under RCUK 2025, when is the first amiodarone dose given in adult refractory VF/pVT?",["After a total of three shocks","Before the first shock","Only after ROSC","After ten shocks"],"After a total of three shocks","RCUK 2025 recommends amiodarone 300 mg IV after a total of three shocks for VF/pVT.","RCUK2025"),
+    careQ("ed","An unstable tachyarrhythmia is causing shock. What is the immediate priority over waiting for amiodarone infusion?",["Synchronized cardioversion","Oral statin treatment","A routine echocardiogram before action","Discharge with a Holter request"],"Synchronized cardioversion","Electrical cardioversion is preferred for unstable tachyarrhythmia with life-threatening features.","RCUK2025")
+  ],
+  ide:[
+    careQ("primary","Which follow-up is important for a patient taking a loop diuretic for heart failure?",["Symptoms, weight, blood pressure, renal function and electrolytes","INR only","Thyroid function only","No review if ankle swelling improves"],"Symptoms, weight, blood pressure, renal function and electrolytes","Loop diuretics relieve congestion but can cause dehydration, renal dysfunction and electrolyte disturbance.","NG106"),
+    careQ("emergency","A patient has severe breathlessness, crackles, hypoxaemia and suspected acute pulmonary oedema. What is the safest principle?",["Treat ABC threats, monitor, support oxygenation/ventilation and follow the current acute-heart-failure pathway","Give oral furosemide and leave at home","Force the patient flat","Delay transfer until urine output increases"],"Treat ABC threats, monitor, support oxygenation/ventilation and follow the current acute-heart-failure pathway","Acute pulmonary oedema is a time-critical respiratory and circulatory emergency; medicine choice depends on perfusion, blood pressure and protocol.","LOCAL"),
+    careQ("ed","After IV loop-diuretic treatment, what should be reassessed?",["Clinical response, urine output, renal function and electrolytes","Only temperature","Only cholesterol","Nothing until discharge"],"Clinical response, urine output, renal function and electrolytes","Response and adverse effects must be monitored so congestion improves without causing renal injury or dangerous electrolyte loss.","NG106")
+  ],
+  spironolactone:[
+    careQ("primary","What is the key monitoring pair for spironolactone or eplerenone?",["Potassium and renal function","INR and APTT","Troponin and D-dimer","Peak flow and eosinophils"],"Potassium and renal function","Mineralocorticoid-receptor antagonists can cause dangerous hyperkalaemia, especially with renal impairment or renin–angiotensin drugs.","NG106"),
+    careQ("emergency","A patient taking ramipril and spironolactone develops weakness and bradycardia during AKI. Which complication is most concerning?",["Hyperkalaemia","Hypocalcaemia from ezetimibe","Nitrate tolerance","Isolated statin myalgia"],"Hyperkalaemia","The combination plus renal impairment can markedly raise potassium; obtain ECG and urgent electrolyte assessment under the current pathway.","BNF"),
+    careQ("ed","What should happen when severe hyperkalaemia is suspected in a patient on an MRA?",["Immediate ECG, blood testing and protocol-based treatment while reviewing contributing medicines","Give extra potassium","Continue every medicine unchanged until clinic","Treat with adenosine alone"],"Immediate ECG, blood testing and protocol-based treatment while reviewing contributing medicines","Life-threatening hyperkalaemia needs immediate cardiac monitoring and treatment while reversible causes and medicines are addressed.","LOCAL")
+  ],
+  digoxin:[
+    careQ("primary","Which factors increase the risk of digoxin toxicity?",["Renal impairment, interacting medicines and electrolyte disturbance","High LDL alone","Amlodipine-related ankle oedema alone","Taking aspirin with food"],"Renal impairment, interacting medicines and electrolyte disturbance","Digoxin has a narrow therapeutic index; renal decline, hypokalaemia and interactions can raise toxicity risk.","BNF"),
+    careQ("emergency","Nausea, confusion, visual colour disturbance and bradyarrhythmia in a patient taking digoxin suggest what?",["Digoxin toxicity","Uncomplicated hypertension","Nitrate tolerance","Statin intolerance only"],"Digoxin toxicity","The combination of gastrointestinal, neurological, visual and cardiac features should trigger urgent toxicity assessment.","BNF"),
+    careQ("ed","When are digoxin-specific antibody fragments most relevant?",["Life-threatening digoxin toxicity with serious arrhythmia or instability","Routine AF rate control","Mild ankle oedema","Primary prevention of CVD"],"Life-threatening digoxin toxicity with serious arrhythmia or instability","Digoxin immune Fab is reserved for severe toxicity according to toxicology and local hospital guidance.","BNF")
+  ],
+  nitrate:[
+    careQ("primary","What should a person prescribed GTN for stable angina be taught?",["Correct use, when to repeat under their plan, and when persistent pain requires an emergency call","Use it daily to prevent every headache","Take it with sildenafil","A response proves pain is cardiac"],"Correct use, when to repeat under their plan, and when persistent pain requires an emergency call","A clear action plan prevents delay when pain is persistent, severe or different from the person's usual angina.","BNF"),
+    careQ("emergency","Before giving GTN for suspected cardiac chest pain, which checks are especially important?",["Blood pressure, recent PDE-5 inhibitor use and clinical context","INR only","Serum cholesterol at scene","Whether aspirin relieved previous pain"],"Blood pressure, recent PDE-5 inhibitor use and clinical context","Nitrates can cause profound hypotension, particularly with PDE-5 inhibitors or preload-dependent states; follow current local guidance.","LOCAL"),
+    careQ("ed","Chest pain improves after GTN. What conclusion is safe?",["Improvement does not diagnose or exclude ACS; continue the full assessment","ACS is ruled out","The patient can be discharged without ECG","The pain must be oesophageal"],"Improvement does not diagnose or exclude ACS; continue the full assessment","Response to nitrate is not sufficiently specific; ACS assessment still depends on history, ECG, troponin and clinical risk.","NG185")
+  ],
+  flecainide:[
+    careQ("primary","Why is flecainide generally initiated or directed by a specialist?",["It can be pro-arrhythmic and requires exclusion of structural/ischaemic heart disease","It is a simple first-line antihypertensive","It has no ECG effects","It is an antiplatelet drug"],"It can be pro-arrhythmic and requires exclusion of structural/ischaemic heart disease","Patient selection, ECG review and an appropriate AV-nodal blocking strategy are important for safe use.","BNF"),
+    careQ("emergency","A patient prescribed flecainide develops syncope and a broad-complex tachycardia after taking extra tablets. What is safest?",["Treat as a time-critical arrhythmia/toxicology emergency","Advise another flecainide dose","Give verapamil without rhythm assessment","Wait for a routine GP appointment"],"Treat as a time-critical arrhythmia/toxicology emergency","Flecainide toxicity can cause sodium-channel blockade, QRS widening and malignant arrhythmias; resuscitation and expert toxicology care are required.","BNF"),
+    careQ("ed","Which background condition makes flecainide particularly unsuitable?",["Structural or ischaemic heart disease","Uncomplicated migraine","Well-controlled asthma alone","Treated hypothyroidism alone"],"Structural or ischaemic heart disease","Class Ic agents can increase pro-arrhythmic risk in structural or ischaemic heart disease.","BNF")
+  ],
+  adenosine:[
+    careQ("primary","A patient reports recurrent abrupt-onset palpitations but is well between episodes. What is the useful next step?",["Document rhythm where possible and arrange appropriate ECG/cardiology assessment","Prescribe adenosine for home use","Start thrombolysis","Assume anxiety without assessment"],"Document rhythm where possible and arrange appropriate ECG/cardiology assessment","Adenosine is an acute monitored treatment, not chronic self-treatment; rhythm documentation helps diagnose recurrent SVT.","BNF"),
+    careQ("emergency","When is adenosine most appropriate in the emergency setting?",["A stable regular narrow-complex tachycardia after vagal manoeuvres, with monitoring and protocol authority","Any irregular broad-complex tachycardia","Sinus tachycardia caused by sepsis","An unstable tachyarrhythmia instead of cardioversion"],"A stable regular narrow-complex tachycardia after vagal manoeuvres, with monitoring and protocol authority","Adenosine transiently blocks AV-nodal conduction and is used in a controlled pathway for appropriate regular tachycardia.","RCUK2025"),
+    careQ("ed","A patient with tachyarrhythmia has shock and pulmonary oedema. What should not be delayed to try adenosine?",["Synchronized cardioversion","A fasting lipid profile","Routine ambulatory monitoring","Oral anticoagulation counselling"],"Synchronized cardioversion","Life-threatening adverse signs make the patient unstable; RCUK recommends synchronized cardioversion.","RCUK2025")
+  ],
+  sacubitril:[
+    careQ("primary","What washout is required when changing from an ACE inhibitor to sacubitril/valsartan?",["At least 36 hours","No gap","One hour","Thirty days"],"At least 36 hours","ACE inhibition must not overlap with sacubitril/valsartan because of increased angioedema risk.","NG106"),
+    careQ("emergency","A patient on sacubitril/valsartan develops facial swelling, hypotension and airway symptoms. What is the priority?",["Immediate ABC assessment and emergency treatment","Give an ACE inhibitor","Delay care for a routine medication review","Give warfarin"],"Immediate ABC assessment and emergency treatment","Angioedema and haemodynamic compromise are emergencies requiring immediate airway and circulatory management.","BNF"),
+    careQ("ed","Which prescription combination must be identified and stopped from overlapping?",["Sacubitril/valsartan plus an ACE inhibitor","Sacubitril/valsartan plus a beta-blocker","Sacubitril/valsartan plus an SGLT2 inhibitor","Sacubitril/valsartan plus a loop diuretic"],"Sacubitril/valsartan plus an ACE inhibitor","The ARNI must not be co-administered with an ACE inhibitor; a washout period is required.","NG106")
+  ],
+  flozin:[
+    careQ("primary","Which safety education is important for a person taking an SGLT2 inhibitor?",["Sick-day/peri-procedure instructions and symptoms of ketoacidosis","Double the dose during vomiting","Assume normal glucose excludes ketoacidosis","Stop all fluid intake during illness"],"Sick-day/peri-procedure instructions and symptoms of ketoacidosis","SGLT2 inhibitors may need temporary interruption during acute illness or procedures under an agreed plan because of ketoacidosis and dehydration risk.","MHRA"),
+    careQ("emergency","An unwell patient taking dapagliflozin has abdominal pain, vomiting and deep breathing but only mildly raised glucose. What must be considered?",["Euglycaemic diabetic ketoacidosis","Isolated stable angina","Warfarin toxicity","Nitrate tolerance"],"Euglycaemic diabetic ketoacidosis","SGLT2-associated DKA can occur without marked hyperglycaemia; urgent ketone and acid-base assessment is needed.","MHRA"),
+    careQ("ed","What is the appropriate medicine action when SGLT2-associated DKA is suspected?",["Withhold the SGLT2 inhibitor and treat under the DKA pathway","Give an extra dose","Use it as the sole DKA treatment","Wait for very high glucose before acting"],"Withhold the SGLT2 inhibitor and treat under the DKA pathway","The medicine should be stopped during suspected DKA while urgent protocol-based treatment and investigation proceed.","MHRA")
+  ]
+};
+
+const ESSENTIAL_CARDIAC_QUESTIONS = [
+  careQ("emergency","Which antiplatelet medicine is routinely considered early in suspected acute coronary syndrome unless contraindicated?",["Aspirin","Warfarin","Digoxin","Verapamil"],"Aspirin","NICE ACS guidance includes an early aspirin loading dose when ACS is suspected and there is no clear contraindication; clinicians must follow their current authorised protocol.","NG185"),
+  careQ("primary","Which finding is a major reason to pause and urgently review aspirin administration?",["A clear history of severe aspirin allergy or active major bleeding","A family history of hypertension","A normal ECG","Use of a statin"],"A clear history of severe aspirin allergy or active major bleeding","Allergy and active bleeding are key safety checks before antiplatelet treatment.","NG185"),
+  careQ("primary","Why should dual antiplatelet therapy after coronary stenting not be stopped without specialist advice?",["Premature interruption can cause stent thrombosis","It causes permanent bradycardia","It treats only hypertension","Stopping always improves coronary perfusion"],"Premature interruption can cause stent thrombosis","Duration is individualised by the ACS/PCI and bleeding-risk plan; unplanned interruption can be dangerous.","NG185"),
+  careQ("emergency","Under RCUK 2025, what is the first atropine dose for bradycardia with adverse signs?",["500 micrograms IV","50 micrograms IV","5 mg IV","300 mg IV"],"500 micrograms IV","RCUK 2025 recommends atropine 500 micrograms IV, repeated if needed every 3–5 minutes to a total of 3 mg.","RCUK2025"),
+  careQ("ed","What is the RCUK 2025 maximum total atropine dose for adverse bradycardia?",["3 mg","500 micrograms","10 mg","300 mg"],"3 mg","The adult bradyarrhythmia algorithm allows repeat atropine doses to a total of 3 mg.","RCUK2025"),
+  careQ("emergency","When should adrenaline be given in an adult non-shockable cardiac arrest under RCUK 2025?",["As soon as possible","Only after the fifth rhythm check","Only after ROSC","Never in PEA"],"As soon as possible","Early adrenaline is recommended for non-shockable adult cardiac arrest while high-quality CPR and reversible-cause treatment continue.","RCUK2025"),
+  careQ("emergency","When is adrenaline first given in an adult shockable cardiac arrest under RCUK 2025?",["After the third shock","Before the first shock","After the first shock","Only after the tenth shock"],"After the third shock","RCUK 2025 recommends adrenaline 1 mg after the third shock in VF/pVT.","RCUK2025"),
+  careQ("emergency","What antiarrhythmic dose is given after three shocks for adult VF/pVT under RCUK 2025?",["Amiodarone 300 mg IV","Adenosine 6 mg IV","Atropine 3 mg IV","Digoxin 500 micrograms IV"],"Amiodarone 300 mg IV","Amiodarone 300 mg IV is recommended after a total of three shocks for adult VF/pVT.","RCUK2025"),
+  careQ("emergency","What second amiodarone dose is recommended after five shocks for persistent or recurrent VF/pVT?",["150 mg IV","300 mg IV","1 mg IV","6 mg IV"],"150 mg IV","RCUK 2025 recommends a further amiodarone 150 mg IV after a total of five shocks.","RCUK2025"),
+  careQ("emergency","Which statement about calcium and sodium bicarbonate during routine adult cardiac arrest is correct?",["They are not given routinely; use only for specific indications","Both are given after every shock","Calcium replaces adrenaline","Bicarbonate is required in all VF"],"They are not given routinely; use only for specific indications","RCUK 2025 advises against routine calcium or sodium bicarbonate in cardiac arrest; specific toxicological or metabolic indications are exceptions.","RCUK2025"),
+  careQ("ed","When does RCUK 2025 advise considering immediate thrombolytic therapy during cardiac arrest?",["When pulmonary embolism is suspected or confirmed as the cause","For every asystolic arrest","After ROSC in all patients","For isolated sinus bradycardia"],"When pulmonary embolism is suspected or confirmed as the cause","Suspected or confirmed pulmonary embolism is a specific arrest circumstance in which thrombolysis may be considered.","RCUK2025"),
+  careQ("ed","Which medicine is classically used for torsades de pointes under an appropriate emergency arrhythmia protocol?",["IV magnesium","Oral ezetimibe","Subcutaneous enoxaparin","Sublingual GTN"],"IV magnesium","Magnesium is used for polymorphic ventricular tachycardia associated with long QT, while causes and instability are managed urgently.","RCUK2025"),
+  careQ("ed","Which medicine reverses unfractionated heparin most directly?",["Protamine","Vitamin K","Idarucizumab","Andexanet alfa"],"Protamine","Protamine neutralises unfractionated heparin and partially reverses LMWH; dosing is protocol-led and depends on heparin exposure.","BNF"),
+  careQ("ed","Which specific reversal agent binds dabigatran?",["Idarucizumab","Protamine","Vitamin K","Naloxone"],"Idarucizumab","Idarucizumab is the specific dabigatran reversal agent for appropriate emergency indications.","BNF"),
+  careQ("primary","Which agent may be considered for life-threatening bleeding associated with apixaban or rivaroxaban under an approved pathway?",["Andexanet alfa","Idarucizumab","Atropine","Glucagon"],"Andexanet alfa","Knowing the relevant reversal pathway is part of safe DOAC review and handover; andexanet alfa use is restricted and protocol/specialist led.","BNF"),
+  careQ("primary","Ivabradine lowers heart rate by acting primarily where?",["The sinoatrial node funny current","The platelet P2Y12 receptor","The renal SGLT2 transporter","The vitamin K cycle"],"The sinoatrial node funny current","Ivabradine is a specialist heart-rate-lowering option for selected patients in sinus rhythm; it is not a general substitute for beta-blockers.","NG106"),
+  careQ("primary","Which non-statin oral option can be paired with ezetimibe in selected people with primary hypercholesterolaemia?",["Bempedoic acid","Adenosine","Atropine","Furosemide"],"Bempedoic acid","NICE lipid pathways include bempedoic acid with ezetimibe for selected patients when statins are unsuitable or insufficient.","NG238"),
+  careQ("primary","Inclisiran and PCSK9 monoclonal antibodies are used mainly for what purpose?",["Additional LDL lowering in selected high-risk patients","Immediate termination of SVT","Treatment of acute pulmonary oedema","Reversal of warfarin"],"Additional LDL lowering in selected high-risk patients","These injectable therapies are initiated within specialist or commissioned lipid pathways for eligible high-risk patients.","NG238"),
+  careQ("primary","Colchicine may appear in a cardiac medicines history most commonly for which condition?",["Pericarditis","Complete heart block","Acute pulmonary oedema","Hypertensive emergency"],"Pericarditis","Colchicine is used in diagnosed pericarditis pathways, with contraindications, interactions and renal/hepatic factors reviewed.","BNF"),
+  careQ("ed","Noradrenaline and dobutamine should be understood as what type of treatment?",["Titrated vasoactive/inotropic support requiring close monitoring and senior-led selection","Routine take-home treatment for stable angina","Direct oral anticoagulants","First-line lipid-lowering tablets"],"Titrated vasoactive/inotropic support requiring close monitoring and senior-led selection","Choice depends on the shock phenotype and haemodynamics; these medicines require monitored critical-care use.","BNF")
+].map((q,i)=>({...q,id:`core-${i+1}`,moduleId:"core",moduleName:"Essential & Emergency Medicines"}));
+
+const CONDITION_TOPICS = [
+  {id:"acs",label:"Chest Pain & Acute Coronary Syndromes",icon:"❤️‍🩹",desc:"Angina, STEMI/NSTEMI, antiplatelets, anticoagulation and secondary prevention.",moduleIds:["nitrate","grel","statin","parin","olol","pril"],terms:["angina","coronary","post-mi","myocardial","stent","secondary prevention","chest pain","aspirin","clopidogrel","ticagrelor"]},
+  {id:"heart-failure",label:"Heart Failure & Pulmonary Oedema",icon:"🫁",desc:"Chronic optimisation, deterioration, congestion and ED stabilisation.",moduleIds:["olol","pril","sartan","ide","spironolactone","digoxin","sacubitril","flozin","nitrate"],terms:["heart failure","hfref","hfpef","oedema","congestion","ejection","diuresis","furosemide","sacubitril","spironolactone"]},
+  {id:"af",label:"Atrial Fibrillation",icon:"〰️",desc:"Rate/rhythm control, stroke prevention, bleeding and instability.",moduleIds:["olol","verapamil","xaban","gatran","warfarin","digoxin","flecainide","amiodarone"],terms:["atrial fibrillation"," af ","stroke prevention","rate control","rhythm control","cardioversion","doac","anticoag"]},
+  {id:"svt",label:"SVT & Regular Tachycardia",icon:"⚡",desc:"Recognition, vagal manoeuvres, adenosine, alternatives and unstable care.",moduleIds:["adenosine","verapamil","flecainide","olol","amiodarone"],terms:["svt","tachycard","adenosine","vagal","av node","cardioversion","narrow-complex"]},
+  {id:"brady",label:"Bradycardia & Heart Block",icon:"🐢",desc:"Medicine causes, adverse signs, atropine, glucagon and pacing escalation.",moduleIds:["olol","verapamil","digoxin","amiodarone","adenosine"],terms:["brady","heart block","av block","atropine","glucagon","pacing","conduction"]},
+  {id:"hypertension",label:"Hypertension & Acute Severe BP",icon:"📈",desc:"Primary-care sequencing, monitoring, resistant hypertension and emergencies.",moduleIds:["pril","sartan","dipine","olol","ide","spironolactone"],terms:["hypertension","blood pressure","hypertensive","resistant","amlodipine","indapamide"]},
+  {id:"lipids",label:"Lipids & Cardiovascular Prevention",icon:"🛡️",desc:"Risk discussion, statins, intolerance, add-on therapy and post-ACS care.",moduleIds:["statin","ezetimibe"],terms:["statin","cholesterol","ldl","lipid","rhabdo","ezetimibe","primary prevention","secondary prevention"]},
+  {id:"anticoag",label:"Anticoagulation & Major Bleeding",icon:"🩸",desc:"DOACs, warfarin, heparins, antiplatelets, reversal and safe handover.",moduleIds:["xaban","gatran","parin","warfarin","grel"],terms:["bleed","anticoag","warfarin","heparin","doac","apixaban","dabigatran","reversal","inr","platelet"]},
+  {id:"toxicity",label:"Cardiac Medicine Toxicity",icon:"☠️",desc:"Overdose patterns, dangerous interactions, antidotes and ED escalation.",moduleIds:["olol","verapamil","digoxin","amiodarone","flecainide","spironolactone","xaban","gatran","warfarin","statin"],terms:["tox","overdose","antidote","reversal","shock","brady","hyperkalaemia","rhabdo","bleed","interaction"]},
+];
 
 
 /* ══════════════════════════════════════════════════════════════════════════
@@ -791,11 +1023,106 @@ function gradR(tk){ const t=T[tk]||T.rose; return `linear-gradient(to right, ${t
 function escHtml(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function formatRef(r){ return `${r.author} (${r.year}) '${r.title}'. ${r.source}. Available at: ${r.url} [Accessed: ${r.accessed}].`; }
 
+const MODULE_SOURCE = {
+  olol:"NG106",pril:"NG106",sartan:"NG106",dipine:"NG136",verapamil:"NG196",
+  statin:"NG238",ezetimibe:"NG238",xaban:"NG196",gatran:"NG196",parin:"NG185",
+  warfarin:"NG196",grel:"NG185",amiodarone:"RCUK2025",ide:"NG106",spironolactone:"NG106",
+  digoxin:"NG196",nitrate:"NG185",flecainide:"NG196",adenosine:"RCUK2025",sacubitril:"NG106",flozin:"NG106"
+};
+const GLOBAL_DRUGS=[...new Set(SYSTEM.suffixes.flatMap(sx=>sx.drugs))];
+const FOCUS_PATTERN = {
+  matching:["primary","emergency","ed","primary","emergency"],
+  drugForCondition:["primary","emergency","ed"],
+  conditionForDrug:["ed","primary"],
+  mcq:["emergency","ed","primary","emergency","ed"],
+  typing:["primary","emergency"],
+};
+
+function uniqueValues(values){ return [...new Set(values.filter(Boolean))]; }
+function makeFourOptions(answer,candidates=[]){
+  const fillers=shuffle(uniqueValues([...candidates,...GLOBAL_DRUGS]).filter(v=>v!==answer));
+  return [answer,...fillers].slice(0,4);
+}
+function challengeBase(moduleId,kind,index,focus,prompt,answer,explanation,extra={}){
+  const sx=SYSTEM.suffixes.find(s=>s.id===moduleId);
+  return {id:`${moduleId}-${kind}-${index+1}`,moduleId,moduleName:sx.action,focus,type:"mcq",prompt,answer,explanation,sourceId:MODULE_SOURCE[moduleId]||"BNF",...extra};
+}
+function buildMedicationQuestions(moduleId){
+  const md=ALL_MODULES[moduleId];
+  const sx=SYSTEM.suffixes.find(s=>s.id===moduleId);
+  if(!md||!sx) return [];
+  const out=[];
+  (md.quizData.matching||[]).slice(0,5).forEach((item,i)=>{
+    const other=(md.quizData.matching||[]).map(x=>x.drug).filter(d=>d!==item.drug);
+    out.push(challengeBase(moduleId,"match",i,FOCUS_PATTERN.matching[i],`Which medicine best matches this use or feature? ${item.condition}`,item.drug,`${item.drug} is the medicine paired with ${item.condition}.`,{options:makeFourOptions(item.drug,[...other,...sx.drugs])}));
+  });
+  (md.quizData.drugForCondition||[]).slice(0,3).forEach((item,i)=>{
+    out.push(challengeBase(moduleId,"indication",i,FOCUS_PATTERN.drugForCondition[i],item.condition,item.correct,`${item.correct} is the best medicine match for this indication in the ${sx.action} module.`,{options:makeFourOptions(item.correct,item.distractors)}));
+  });
+  (md.quizData.conditionForDrug||[]).slice(0,2).forEach((item,i)=>{
+    out.push(challengeBase(moduleId,"condition",i,FOCUS_PATTERN.conditionForDrug[i],`Which option is the appropriate indication or use for ${item.drug}?`,item.correct,`${item.correct} is the appropriate use; the other choices are contraindications, hazards or different indications.`,{options:makeFourOptions(item.correct,item.conditions)}));
+  });
+  (md.quizData.mcq||[]).slice(0,5).forEach((item,i)=>{
+    out.push(challengeBase(moduleId,"mcq",i,FOCUS_PATTERN.mcq[i],item.q,item.correct,`Correct answer: ${item.correct}. Review the linked teaching slides and current guidance for the clinical context.`,{options:makeFourOptions(item.correct,item.options)}));
+  });
+  (md.quizData.typing||[]).slice(0,2).forEach((item,i)=>{
+    out.push(challengeBase(moduleId,"typed",i,FOCUS_PATTERN.typing[i],item.scenario,item.answer,`Expected answer: ${item.answer}.`,{type:"typing",accepted:[item.answer]}));
+  });
+  (CARE_PATHWAY_QUESTIONS[moduleId]||[]).forEach((item,i)=>out.push({...item,id:`${moduleId}-pathway-${i+1}`,moduleId,moduleName:sx.action}));
+  return out.slice(0,20);
+}
+function allChallengeQuestions(){
+  return [...SYSTEM.suffixes.flatMap(sx=>buildMedicationQuestions(sx.id)),...ESSENTIAL_CARDIAC_QUESTIONS];
+}
+function questionText(item){ return [item.prompt,item.answer,...(item.options||[]),item.explanation||""].join(" ").toLowerCase(); }
+function dedupeQuestions(items){
+  const seen=new Set();
+  return items.filter(item=>{ const key=`${item.prompt}|${item.answer}`.toLowerCase(); if(seen.has(key)) return false; seen.add(key); return true; });
+}
+function selectBalanced(items,limit=20,preservePriority=false){
+  const pool=dedupeQuestions(items);
+  const targets={primary:7,emergency:7,ed:6};
+  const selected=[];
+  Object.keys(targets).forEach(focus=>{
+    const candidates=pool.filter(item=>item.focus===focus);
+    (preservePriority?candidates:shuffle(candidates)).slice(0,targets[focus]).forEach(item=>selected.push(item));
+  });
+  if(selected.length<limit){
+    const used=new Set(selected.map(x=>x.id));
+    shuffle(pool.filter(x=>!used.has(x.id))).slice(0,limit-selected.length).forEach(item=>selected.push(item));
+  }
+  return shuffle(selected.slice(0,limit));
+}
+function buildConditionQuestions(topicId){
+  const topic=CONDITION_TOPICS.find(t=>t.id===topicId);
+  if(!topic) return [];
+  const eligible=allChallengeQuestions().filter(q=>topic.moduleIds.includes(q.moduleId)||q.moduleId==="core");
+  const matched=eligible.filter(q=>topic.terms.some(term=>questionText(q).includes(term)));
+  const matchedKeys=new Set(matched.map(q=>q.id));
+  const fallback=eligible.filter(q=>!matchedKeys.has(q.id));
+  return selectBalanced([...shuffle(matched),...shuffle(fallback)],20,true);
+}
+function buildRandomQuestions(){
+  const coreFocus=["primary","emergency","ed","ed"];
+  const core=coreFocus.map(focus=>shuffle(ESSENTIAL_CARDIAC_QUESTIONS.filter(q=>q.focus===focus))[0]);
+  const moduleFocus=[...Array(6).fill("primary"),...Array(6).fill("emergency"),...Array(4).fill("ed")];
+  const modules=shuffle(SYSTEM.suffixes).slice(0,16);
+  const moduleItems=modules.map((sx,i)=>{
+    const candidates=buildMedicationQuestions(sx.id).filter(q=>q.focus===moduleFocus[i]);
+    return shuffle(candidates)[0];
+  });
+  return selectBalanced([...core,...moduleItems,...shuffle(allChallengeQuestions())],20,true);
+}
+function prepareChallengeItems(items){
+  return items.map(item=>({...item,options:item.type==="typing"?undefined:shuffle(item.options||[])}));
+}
+function sourceFor(item){ return CLINICAL_SOURCES[item.sourceId]||CLINICAL_SOURCES.BNF; }
+
 // ═══════════════════════════════════════════════════════════════════════════
 // STATE
 // ═══════════════════════════════════════════════════════════════════════════
 const state = {
-  view:'home',            // home | module | progress
+  view:'home',            // home | module | conditions | challenge | progress
   activeSuffix:null,
   phase:'slides',         // slides | quiz | done
   slideIdx:0,
@@ -807,9 +1134,34 @@ const state = {
   enabledSections:{},
   enabledQuizTypes:{},
   biblioOpen:false,
+  challengeBest:{},
+  challenge:null,
   // quiz engine state
   quiz:null,
 };
+
+const STORAGE_KEY="cardiopharm-progress-v2";
+function loadProgress(){
+  try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)||"{}"); }catch(_){ return {}; }
+}
+function saveProgress(){
+  try{
+    localStorage.setItem(STORAGE_KEY,JSON.stringify({
+      streak:state.streak,completed:state.completed,totalScore:state.totalScore,
+      enabledSections:state.enabledSections,enabledQuizTypes:state.enabledQuizTypes,
+      challengeBest:state.challengeBest
+    }));
+  }catch(_){}
+}
+const savedProgress=loadProgress();
+if(savedProgress&&typeof savedProgress==="object"){
+  state.streak=Number(savedProgress.streak)||0;
+  state.completed=savedProgress.completed||{};
+  state.totalScore=savedProgress.totalScore||{correct:0,total:0};
+  state.enabledSections=savedProgress.enabledSections||{};
+  state.enabledQuizTypes=savedProgress.enabledQuizTypes||{};
+  state.challengeBest=savedProgress.challengeBest||{};
+}
 
 function diffClass(d){ return 'diff diff-'+d; }
 function streakClass(s){ return 'streak '+(s===0?'s0':s>=10?'s10':s>=5?'s5':'s1'); }
@@ -822,7 +1174,9 @@ function render(){
   const root=document.getElementById('root');
   let html='';
   // header
-  const sub = (state.activeSuffix && state.view==='module') ? `<p>${escHtml(state.activeSuffix.affix)} — ${escHtml(state.activeSuffix.action)}</p>` : '';
+  const sub = (state.activeSuffix && state.view==='module')
+    ? `<p>${escHtml(state.activeSuffix.affix)} — ${escHtml(state.activeSuffix.action)}</p>`
+    : (state.view==='challenge'&&state.challenge?`<p>${escHtml(state.challenge.title)}</p>`:'');
   html += `<header><div class="hbar">
     <button class="burger" onclick="toggleMenu()">${state.menuOpen?IC.x:IC.menu}</button>
     <div class="htitle"><h1>Cardio<span>Pharm</span></h1>${sub}</div>
@@ -832,6 +1186,8 @@ function render(){
   html += `<main class="wrap">`;
   if(state.view==='home') html+=renderHome();
   else if(state.view==='module') html+=renderModule();
+  else if(state.view==='conditions') html+=renderConditions();
+  else if(state.view==='challenge') html+=renderChallenge();
   else if(state.view==='progress') html+=renderProgress();
   html += `</main>`;
   // drawer
@@ -850,12 +1206,21 @@ function renderHome(){
     <div class="hero-top"><span class="hero-icon">${IC.heartBig}</span>
     <div><h2>Cardiology Pharmacology</h2><p>${escHtml(SYSTEM.desc)}</p></div></div>
     <div class="chips">
-      <span class="chip">🚑 Pre-hospital</span>
+      <span class="chip">🩺 Primary care</span>
+      <span class="chip">🚑 Emergency care</span>
+      <span class="chip">🏥 ED</span>
       <span class="chip">📚 Harvard refs</span>
       <span class="chip">✅ ${done}/${SYSTEM.suffixes.length} done</span>
       ${state.streak>0?`<span class="chip">🔥 ${state.streak} streak</span>`:''}
     </div></div>`;
-  h+=`<h2 class="section-title">${SYSTEM.suffixes.length} Cardiac Drug Classes</h2>`;
+  h+=`<div class="clinical-note"><strong>Educational revision tool:</strong> not a prescribing aid or substitute for patient assessment. Always use the current BNF, NICE, RCUK, JRCALC/local trust guidance and your scope of practice.</div>`;
+  h+=`<div class="section-row"><h2 class="section-title">Quick Assessments</h2><p>20 questions each</p></div>`;
+  h+=`<div class="quick-grid">
+    <button class="quick-card quick-random" onclick="startRandomChallenge()"><span><span class="qi">🎲</span><h3>Random 20</h3><p>Twenty mixed questions across medication classes and all three care settings.</p></span><span class="go">Start challenge →</span></button>
+    <button class="quick-card quick-condition" onclick="showConditions()"><span><span class="qi">🫀</span><h3>By Cardiac Condition</h3><p>Practise the medicine pathway from primary care through ambulance care to ED.</p></span><span class="go">Choose condition →</span></button>
+    <button class="quick-card quick-essential" onclick="startEssentialChallenge()"><span><span class="qi">💉</span><h3>Essential & Emergency Medicines</h3><p>Aspirin, reversal agents, resuscitation drugs and newer lipid/HF medicines.</p></span><span class="go">Start 20 →</span></button>
+  </div>`;
+  h+=`<div class="section-row"><h2 class="section-title">${SYSTEM.suffixes.length} Cardiac Drug Classes</h2><p>Slides · original quizzes · clinical 20</p></div>`;
   h+=`<div class="grid">`;
   SYSTEM.suffixes.forEach(sx=>{
     const t=T[sx.tk]||T.rose;
@@ -867,11 +1232,99 @@ function renderHome(){
       <p class="card-drugs">${escHtml(sx.drugs.slice(0,3).join(' · '))}${sx.drugs.length>3?'…':''}</p>
       <div class="card-tags">
         <span class="tag ${hasData?'tag-ready':'tag-soon'}">${hasData?'✓ Ready':'Soon'}</span>
+        <span class="tag tag-challenge">🎯 20 Q</span>
         <span class="tag tag-ph">🚑</span>
         <span class="tag tag-ref">📚 Refs</span>
       </div></button>`;
   });
-  h+=`</div></div>`;
+  h+=`</div>`;
+  h+=renderGuidanceLinks();
+  h+=`</div>`;
+  return h;
+}
+
+function renderGuidanceLinks(){
+  const keys=["NG106","NG136","NG185","NG196","NG238","RCUK2025","BNF"];
+  return `<div class="guidance-links"><h3>Core guidance used for the clinical challenges</h3><div>${keys.map(k=>`<a href="${CLINICAL_SOURCES[k].url}" target="_blank" rel="noopener">${escHtml(CLINICAL_SOURCES[k].label)}</a>`).join('')}</div></div>`;
+}
+
+function renderConditions(){
+  let h=`<div class="fade">`;
+  h+=`<button class="back-btn" onclick="goHome()">${IC.arrowLeft} Back to drug classes</button>`;
+  h+=`<div class="conditions-head"><h2>Cardiac Condition Challenges</h2><p>Each challenge selects 20 medication-focused questions and balances the care journey across primary care, pre-hospital emergency care and the emergency department.</p></div>`;
+  h+=`<div class="clinical-note"><strong>Use for revision:</strong> scenarios test principles and medicines recognition. They do not authorise treatment or replace current patient-specific guidance.</div>`;
+  h+=`<div class="quick-grid">
+    <button class="quick-card quick-random" onclick="startRandomChallenge()"><span><span class="qi">🎲</span><h3>Random 20</h3><p>Mixed conditions, medicines and care settings.</p></span><span class="go">Start →</span></button>
+    <button class="quick-card quick-essential" onclick="startEssentialChallenge()"><span><span class="qi">💉</span><h3>Essential Medicines 20</h3><p>Resuscitation, ACS, reversal and specialist medicines.</p></span><span class="go">Start →</span></button>
+  </div>`;
+  h+=`<div class="grid">`;
+  CONDITION_TOPICS.forEach((topic,i)=>{
+    const tk=Object.keys(T)[i%Object.keys(T).length];
+    h+=`<button class="card condition-card" onclick="startConditionChallenge('${topic.id}')">
+      <div class="card-badge" style="background:${grad(tk)}">${topic.icon}</div>
+      <div class="card-head"><h3>${escHtml(topic.label)}</h3></div>
+      <p class="card-drugs">${escHtml(topic.desc)}</p>
+      <div class="condition-meta"><span>🎯 20 questions</span><span>🩺 🚑 🏥</span></div>
+    </button>`;
+  });
+  h+=`</div>${renderGuidanceLinks()}</div>`;
+  return h;
+}
+
+function renderChallenge(){
+  const c=state.challenge;
+  if(!c) return `<div class="coming-soon"><p>No challenge selected.</p><button class="btn-rose" style="margin:16px auto" onclick="goHome()">Home</button></div>`;
+  if(c.phase==='done') return renderChallengeDone(c);
+  const item=c.items[c.index];
+  const focus=CARE_FOCUS[item.focus]||CARE_FOCUS.ed;
+  const source=sourceFor(item);
+  const pct=Math.round(((c.index+1)/c.items.length)*100);
+  let h=`<div class="fade">`;
+  h+=`<div class="challenge-top"><button class="back-btn" onclick="exitChallenge()">${IC.arrowLeft} Exit</button><div class="challenge-title"><p>${escHtml(c.kicker)}</p><h2>${escHtml(c.title)}</h2></div></div>`;
+  h+=`<div class="progress-row"><span class="progress-num">Question ${c.index+1} of ${c.items.length}</span><span class="quiz-score">${c.correct}/${c.answeredCount}</span></div>`;
+  h+=`<div class="progress-bar"><div class="progress-fill" style="width:${pct}%;background:linear-gradient(90deg,#e11d48,#7c3aed)"></div></div>`;
+  h+=`<div class="challenge-context"><span class="care-badge ${focus.className}">${focus.icon} ${escHtml(focus.label)}</span><span class="module">${escHtml(item.moduleName)}</span></div>`;
+  h+=`<div class="quiz-prompt" style="background:linear-gradient(135deg,#1e293b,#475569)"><p class="qlabel">Clinical question</p><p class="qtext" style="line-height:1.5">${escHtml(item.prompt)}</p></div>`;
+  if(item.type==='typing'){
+    h+=`<input class="type-input" id="challengeInput" aria-label="Type your answer" placeholder="Type your answer..." value="${escHtml(c.input)}" ${c.itemAnswered?'disabled':''} oninput="state.challenge.input=this.value" onkeydown="if(event.key==='Enter'&&this.value.trim()&&!state.challenge.itemAnswered)submitChallengeTyping()">`;
+    if(!c.itemAnswered) h+=`<button class="btn-full" style="background:linear-gradient(90deg,#e11d48,#7c3aed)" onclick="submitChallengeTyping()">Submit answer</button>`;
+  }else{
+    h+=`<div class="options mcq">`;
+    item.options.forEach((opt,i)=>{
+      let cls='opt',ic='';
+      if(c.itemAnswered){
+        if(opt===item.answer){cls+=' correct';ic=`<span class="ic" style="color:#10b981">${IC.checkSm}</span>`;}
+        else if(opt===c.selected){cls+=' wrong';ic=`<span class="ic" style="color:#fb7185">${IC.xc}</span>`;}
+        else cls+=' dim';
+      }
+      h+=`<button class="${cls}" ${c.itemAnswered?'disabled':''} onclick="answerChallenge(${i})"><span>${escHtml(opt)}</span>${ic}</button>`;
+    });
+    h+=`</div>`;
+  }
+  if(c.itemAnswered){
+    const last=c.responses[c.responses.length-1];
+    h+=`<div class="answer-feedback ${last.correct?'ok':'no'}" role="status"><p class="result">${last.correct?'✓ Correct':'✕ Not quite — '+escHtml(item.answer)}</p><p class="why">${escHtml(item.explanation)}</p><p class="src">Source: <a href="${source.url}" target="_blank" rel="noopener">${escHtml(source.label)}</a></p></div>`;
+    h+=`<button class="btn-full" style="background:linear-gradient(90deg,#e11d48,#7c3aed)" onclick="nextChallengeQuestion()">${c.index+1<c.items.length?'Next question':'See results'} ${IC.chevR}</button>`;
+  }
+  h+=`</div>`;
+  return h;
+}
+
+function renderChallengeDone(c){
+  const pct=Math.round((c.correct/Math.max(c.answeredCount,1))*100);
+  const missed=c.responses.filter(r=>!r.correct);
+  let h=`<div class="challenge-complete fade"><div class="score-ring"><strong>${pct}%</strong><span>${c.correct}/${c.answeredCount}</span></div>`;
+  h+=`<h2>${escHtml(c.title)} complete</h2><p>${pct>=80?'Strong result — review any missed safety points below.':pct>=60?'Good base — review the missed questions and repeat when ready.':'Use the review below, revisit the class slides, then repeat the challenge.'}</p>`;
+  h+=`<div class="care-results">`;
+  ["primary","emergency","ed"].forEach(key=>{ const f=CARE_FOCUS[key],b=c.breakdown[key]; h+=`<div class="care-result"><strong>${b.correct}/${b.total}</strong><span>${f.icon} ${escHtml(f.label)}</span></div>`; });
+  h+=`</div>`;
+  if(missed.length){
+    h+=`<div class="review-box"><h3>Review missed questions (${missed.length})</h3>`;
+    missed.forEach(r=>{ h+=`<div class="review-item"><p>${escHtml(r.item.prompt)}</p><strong>Correct: ${escHtml(r.item.answer)}</strong></div>`; });
+    h+=`</div>`;
+  }
+  h+=`<div class="challenge-actions"><button class="btn-outline" onclick="repeatChallenge()">${IC.rotate} New set / repeat</button><button class="btn-rose" onclick="exitChallenge()">${IC.arrowLeft} Back</button></div>`;
+  h+=`</div>`;
   return h;
 }
 
@@ -927,7 +1380,9 @@ function renderSlides(sx,md){
   h+=`<button class="nav-btn nav-prev" ${state.slideIdx===0?'disabled':''} onclick="prevSlide()">${IC.chevL} Prev</button>`;
   if(state.slideIdx<secs.length-1) h+=`<button class="nav-btn nav-next" style="background:${gradR(sx.tk)}" onclick="nextSlide()">Next ${IC.chevR}</button>`;
   else h+=`<button class="nav-btn nav-quiz" onclick="startQuiz()">Start Quizzes ${IC.chevR}</button>`;
-  h+=`</div></div>`;
+  h+=`</div>`;
+  h+=`<button class="challenge-launch" onclick="startMedicationChallenge('${sx.id}')">🎯 Start 20-question ${escHtml(sx.action)} clinical challenge</button>`;
+  h+=`</div>`;
   return h;
 }
 
@@ -944,7 +1399,14 @@ function startQuiz(){
   render();
 }
 
-function shuffle(a){ return [...a].sort(()=>0.5-Math.random()); }
+function shuffle(a){
+  const copy=[...a];
+  for(let i=copy.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [copy[i],copy[j]]=[copy[j],copy[i]];
+  }
+  return copy;
+}
 
 function renderQuiz(sx,md){
   const q=state.quiz;
@@ -1074,7 +1536,8 @@ function renderDone(sx){
 // ═══════════════════════════════════════════════════════════════════════════
 function renderProgress(){
   const done=SYSTEM.suffixes.filter(s=>state.completed[s.id]).length;
-  const stats=[{l:'Completed',v:done,e:'✅'},{l:'Total Classes',v:SYSTEM.suffixes.length,e:'🫀'},{l:'Correct',v:state.totalScore.correct,e:'🎯'},{l:'Streak',v:state.streak,e:'🔥'}];
+  const bestScores=Object.values(state.challengeBest).map(Number).filter(Number.isFinite);
+  const stats=[{l:'Completed',v:done,e:'✅'},{l:'Total Classes',v:SYSTEM.suffixes.length,e:'🫀'},{l:'Correct',v:state.totalScore.correct,e:'🎯'},{l:'Streak',v:state.streak,e:'🔥'},{l:'20-Q Challenges',v:bestScores.length,e:'🧠'},{l:'Best Challenge',v:bestScores.length?Math.max(...bestScores)+'%':'—',e:'🏆'}];
   let h=`<div class="fade"><h2 class="section-title" style="font-size:20px">My Progress</h2>`;
   h+=`<div class="stats-grid">`;
   stats.forEach(s=>{ h+=`<div class="stat"><div class="e">${s.e}</div><div class="v">${s.v}</div><div class="l">${s.l}</div></div>`; });
@@ -1096,6 +1559,9 @@ function renderDrawer(){
   h+=`<div class="drawer-body">`;
   h+=`<p class="drawer-label">Navigation</p>`;
   h+=`<button class="drawer-nav ${state.view==='home'?'active':''}" onclick="navTo('home')"><span>🫀</span>All Drug Classes</button>`;
+  h+=`<button class="drawer-nav ${state.view==='conditions'?'active':''}" onclick="showConditions()"><span>❤️‍🩹</span>Cardiac Conditions</button>`;
+  h+=`<button class="drawer-nav" onclick="startRandomFromMenu()"><span>🎲</span>Random 20</button>`;
+  h+=`<button class="drawer-nav" onclick="startEssentialFromMenu()"><span>💉</span>Essential Medicines 20</button>`;
   h+=`<button class="drawer-nav ${state.view==='progress'?'active':''}" onclick="navTo('progress')"><span>📊</span>My Progress</button>`;
   h+=`<p class="drawer-label">Drug Classes (${SYSTEM.suffixes.length})</p>`;
   SYSTEM.suffixes.forEach(sx=>{
@@ -1120,6 +1586,7 @@ function renderSettings(){
     h+=`<button class="toggle ${on?'on-quiz':'off'}" onclick="toggleQuiz('${qt.key}')"><span>${qt.icon} ${escHtml(qt.label)}</span><div class="toggle-dot ${on?'on-quiz':'off'}">${on?IC.check:''}</div></button>`;
   });
   h+=`</div>`;
+  h+=`<div class="clinical-note" style="margin-bottom:16px"><strong>Clinical 20 challenges</strong> always include all three care settings, so these quiz-type switches apply only to the original class quizzes.</div>`;
   h+=`<button class="sheet-done" onclick="closeSettings()">Done</button>`;
   h+=`</div></div>`;
   return h;
@@ -1135,22 +1602,122 @@ function renderSettings(){
    Navigation, quiz interaction handlers, and app start-up
    ══════════════════════════════════════════════════════════════════════════ */
 
+function createChallenge({mode,key,title,kicker,items,returnView}){
+  const prepared=prepareChallengeItems(items).slice(0,20);
+  state.challenge={
+    mode,key,title,kicker,returnView,items:prepared,index:0,phase:"playing",itemAnswered:false,
+    selected:null,input:"",correct:0,answeredCount:0,responses:[],
+    breakdown:{primary:{correct:0,total:0},emergency:{correct:0,total:0},ed:{correct:0,total:0}}
+  };
+  state.view="challenge";
+  state.menuOpen=false;
+  render(); window.scrollTo(0,0);
+}
+function startMedicationChallenge(id){
+  const sx=SYSTEM.suffixes.find(s=>s.id===id);
+  if(!sx) return;
+  createChallenge({mode:"medication",key:id,title:`${sx.action}: Clinical 20`,kicker:"Medication class challenge",items:shuffle(buildMedicationQuestions(id)),returnView:"module"});
+}
+function startConditionChallenge(id){
+  const topic=CONDITION_TOPICS.find(t=>t.id===id);
+  if(!topic) return;
+  createChallenge({mode:"condition",key:id,title:topic.label,kicker:"Cardiac condition challenge",items:buildConditionQuestions(id),returnView:"conditions"});
+}
+function startEssentialChallenge(){
+  const back=state.view==="conditions"?"conditions":"home";
+  createChallenge({mode:"essential",key:"essential",title:"Essential & Emergency Medicines",kicker:"Broader cardiac medicines",items:shuffle(ESSENTIAL_CARDIAC_QUESTIONS),returnView:back});
+}
+function startRandomChallenge(){
+  const back=state.view==="conditions"?"conditions":"home";
+  createChallenge({mode:"random",key:"random",title:"Random Cardiac 20",kicker:"All medicines · all care settings",items:buildRandomQuestions(),returnView:back});
+}
+function normalizeClinicalAnswer(value){
+  return String(value||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g," ").trim();
+}
+function recordChallengeResponse(correct,given){
+  const c=state.challenge;
+  if(!c||c.itemAnswered) return;
+  const item=c.items[c.index];
+  c.itemAnswered=true;
+  c.selected=given;
+  c.answeredCount++;
+  if(correct) c.correct++;
+  c.breakdown[item.focus].total++;
+  if(correct) c.breakdown[item.focus].correct++;
+  c.responses.push({item,correct,given});
+  setStreak(correct);
+  saveProgress();
+  render();
+}
+function answerChallenge(index){
+  const c=state.challenge;
+  if(!c||c.itemAnswered) return;
+  const item=c.items[c.index];
+  const selected=item.options[index];
+  recordChallengeResponse(selected===item.answer,selected);
+}
+function submitChallengeTyping(){
+  const c=state.challenge;
+  if(!c||c.itemAnswered||!c.input.trim()) return;
+  const item=c.items[c.index];
+  const entered=normalizeClinicalAnswer(c.input);
+  const answers=(item.accepted||[item.answer]).map(normalizeClinicalAnswer);
+  const correct=answers.some(answer=>entered===answer||(answer.length>=4&&entered.includes(answer)));
+  recordChallengeResponse(correct,c.input.trim());
+}
+function nextChallengeQuestion(){
+  const c=state.challenge;
+  if(!c||!c.itemAnswered) return;
+  if(c.index+1<c.items.length){
+    c.index++; c.itemAnswered=false; c.selected=null; c.input="";
+    render(); window.scrollTo(0,0); return;
+  }
+  c.phase="done";
+  state.totalScore.correct+=c.correct;
+  state.totalScore.total+=c.answeredCount;
+  const score=Math.round((c.correct/Math.max(c.answeredCount,1))*100);
+  const scoreKey=`${c.mode}:${c.key}`;
+  state.challengeBest[scoreKey]=Math.max(Number(state.challengeBest[scoreKey])||0,score);
+  saveProgress();
+  render(); window.scrollTo(0,0);
+}
+function repeatChallenge(){
+  const c=state.challenge;
+  if(!c) return;
+  const config={mode:c.mode,key:c.key,title:c.title,kicker:c.kicker,returnView:c.returnView,items:[]};
+  if(c.mode==="medication") config.items=shuffle(buildMedicationQuestions(c.key));
+  else if(c.mode==="condition") config.items=buildConditionQuestions(c.key);
+  else if(c.mode==="essential") config.items=shuffle(ESSENTIAL_CARDIAC_QUESTIONS);
+  else config.items=buildRandomQuestions();
+  createChallenge(config);
+}
+function exitChallenge(){
+  const back=state.challenge?.returnView||"home";
+  state.challenge=null;
+  state.view=back;
+  if(back==="module") state.phase="slides";
+  render(); window.scrollTo(0,0);
+}
+function showConditions(){ state.view="conditions"; state.menuOpen=false; render(); window.scrollTo(0,0); }
+function startRandomFromMenu(){ state.menuOpen=false; state.view="home"; startRandomChallenge(); }
+function startEssentialFromMenu(){ state.menuOpen=false; state.view="home"; startEssentialChallenge(); }
+
 function toggleMenu(){ state.menuOpen=!state.menuOpen; render(); }
 function closeMenu(){ state.menuOpen=false; render(); }
 function openSettings(){ state.settingsOpen=true; render(); }
 function closeSettings(){ state.settingsOpen=false; render(); }
-function navTo(v){ state.view=v; state.menuOpen=false; render(); }
+function navTo(v){ state.view=v; state.menuOpen=false; state.challenge=null; render(); window.scrollTo(0,0); }
 function navModule(id){ state.menuOpen=false; startSuffix(id); }
 function startSuffix(id){ state.activeSuffix=SYSTEM.suffixes.find(s=>s.id===id); state.phase='slides'; state.slideIdx=0; state.biblioOpen=false; state.view='module'; render(); window.scrollTo(0,0); }
-function goHome(){ state.view='home'; state.phase='slides'; render(); window.scrollTo(0,0); }
+function goHome(){ state.view='home'; state.phase='slides'; state.challenge=null; render(); window.scrollTo(0,0); }
 function prevSlide(){ if(state.slideIdx>0){state.slideIdx--;state.biblioOpen=false;render();window.scrollTo(0,0);} }
 function nextSlide(){ const md=ALL_MODULES[state.activeSuffix.id]; const secs=enabledSlideSections(md); if(state.slideIdx<secs.length-1){state.slideIdx++;state.biblioOpen=false;render();window.scrollTo(0,0);} }
 function toggleBiblio(){ state.biblioOpen=!state.biblioOpen; render(); }
 function backToSlides(){ state.phase='slides'; render(); window.scrollTo(0,0); }
 function repeatModule(){ state.phase='slides'; state.slideIdx=0; render(); window.scrollTo(0,0); }
 
-function toggleSection(k){ state.enabledSections[k]=state.enabledSections[k]===false?undefined:false; render(); }
-function toggleQuiz(k){ state.enabledQuizTypes[k]=state.enabledQuizTypes[k]===false?undefined:false; render(); }
+function toggleSection(k){ state.enabledSections[k]=state.enabledSections[k]===false?undefined:false; saveProgress(); render(); }
+function toggleQuiz(k){ state.enabledQuizTypes[k]=state.enabledQuizTypes[k]===false?undefined:false; saveProgress(); render(); }
 
 function setStreak(ok){ state.streak=ok?state.streak+1:0; }
 function recordAnswer(ok){
@@ -1158,6 +1725,7 @@ function recordAnswer(ok){
   q.score.correct+=ok?1:0; q.score.total++;
   q.qScore.correct+=ok?1:0; q.qScore.total++;
   setStreak(ok);
+  saveProgress();
 }
 
 function beginQuiz(){ state.quiz.phase='playing'; state.quiz.qi=0; state.quiz.answered=false; state.quiz.selAns=null; state.quiz.qScore={correct:0,total:0}; state.quiz.shuffledOpts=null; state.quiz.matchSel=null; state.quiz.matched=[]; state.quiz.mDrugs=null; state.quiz.mConds=null; state.quiz.typeRes=null; state.quiz.typeInput=''; render(); window.scrollTo(0,0); }
@@ -1197,6 +1765,7 @@ function finishModule(){
   state.totalScore.correct+=state.quiz.score.correct;
   state.totalScore.total+=state.quiz.score.total;
   state.phase='done';
+  saveProgress();
   render(); window.scrollTo(0,0);
 }
 
